@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Silicon Library (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Silicon Library (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
