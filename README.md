@@ -7,7 +7,7 @@
 </a>
 <br/>
 <br/>
-<img src="Assets\icon.png">
+<img src="Assets\icon.png" height=100>
 <br />
 <h3>Description:</h3>
 
