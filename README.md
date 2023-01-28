@@ -9,8 +9,8 @@
 
 <img src="Assets\icon.png" height=95>
 <br />
-<h3>Description::</h3>
-<br />
+<h3>Description:</h3>
+
  A system for leasing SBCs in a laboratory similar to a library.
 
  A project by Sandeep V, in Sairam Techno Incubation Center (STIC).
