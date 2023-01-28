@@ -1,27 +1,22 @@
-﻿*Recommended Markdown Viewer: [Markdown Editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor2)*
+<h1> Silicon Library ~ Testing SBCs</h1>
 
-## Getting Started
+<a title="Made with Fluent Design" href="https://github.com/bdlukaa/fluent_ui">
+  <img
+    src="https://img.shields.io/badge/fluent-design-blue?style=round-square&color=gray&labelColor=1273DE"
+  >
+</a>
+<br/>
 
-Browse and address `TODO:` comments in `View -> Task List` to learn the codebase and understand next steps for turning the generated code into production code.
+<img src="Assets\icon.png" height=95>
+<br />
+ A system for leasing SBCs in a laboratory similar to a library.
 
-Explore the [WinUI Gallery](https://www.microsoft.com/store/productId/9P3JFPWWDZRC) to learn about available controls and design patterns.
+ A project by Sandeep V, in Sairam Techno Incubation Center (STIC).
 
-Relaunch Template Studio to modify the project by right-clicking on the project in `View -> Solution Explorer` then selecting `Add -> New Item (Template Studio)`.
+<br />
 
-## Publishing
+<h4>Quick Links:</h4>
 
-For projects with MSIX packaging, right-click on the application project and select `Package and Publish -> Create App Packages...` to create an MSIX package.
-
-For projects without MSIX packaging, follow the [deployment guide](https://docs.microsoft.com/windows/apps/windows-app-sdk/deploy-unpackaged-apps) or add the `Self-Contained` Feature to enable xcopy deployment.
-
-## CI Pipelines
-
-See [README.md](https://github.com/microsoft/TemplateStudio/blob/main/docs/WinUI/pipelines/README.md) for guidance on building and testing projects in CI pipelines.
-
-## Changelog
-
-See [releases](https://github.com/microsoft/TemplateStudio/releases) and [milestones](https://github.com/microsoft/TemplateStudio/milestones).
-
-## Feedback
-
-Bugs and feature requests should be filed at https://aka.ms/templatestudio.
+[Design Drafts](DESIGNDRAFTS.md)
+<br>
+[Working Principle, Motivation](PPT.md)
