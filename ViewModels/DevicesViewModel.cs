@@ -14,7 +14,7 @@ namespace Silicon_Library.ViewModels;
 public class DevicesViewModel : ObservableRecipient, INavigationAware
 {
     private readonly INavigationService _navigationService;
-    private readonly ISampleDataService _sampleDataService;
+    private readonly DatabaseService _sampleDataService;
 
     public ICommand ItemClickCommand
     {
@@ -23,7 +23,7 @@ public class DevicesViewModel : ObservableRecipient, INavigationAware
 
     public ObservableCollection<SampleOrder> Source { get; } = new ObservableCollection<SampleOrder>();
 
-    public DevicesViewModel(INavigationService navigationService, ISampleDataService sampleDataService)
+    public DevicesViewModel(INavigationService navigationService, DatabaseService sampleDataService)
     {
         _navigationService = navigationService;
         _sampleDataService = sampleDataService;

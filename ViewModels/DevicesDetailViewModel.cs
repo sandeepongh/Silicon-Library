@@ -8,7 +8,7 @@ namespace Silicon_Library.ViewModels;
 
 public class DevicesDetailViewModel : ObservableRecipient, INavigationAware
 {
-    private readonly ISampleDataService _sampleDataService;
+    private readonly DatabaseService _sampleDataService;
     private SampleOrder? _item;
 
     public SampleOrder? Item
@@ -17,7 +17,7 @@ public class DevicesDetailViewModel : ObservableRecipient, INavigationAware
         set => SetProperty(ref _item, value);
     }
 
-    public DevicesDetailViewModel(ISampleDataService sampleDataService)
+    public DevicesDetailViewModel(DatabaseService sampleDataService)
     {
         _sampleDataService = sampleDataService;
     }

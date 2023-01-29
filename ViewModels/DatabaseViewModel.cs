@@ -10,11 +10,11 @@ namespace Silicon_Library.ViewModels;
 
 public class DatabaseViewModel : ObservableRecipient, INavigationAware
 {
-    private readonly ISampleDataService _sampleDataService;
+    private readonly DatabaseService _sampleDataService;
 
     public ObservableCollection<SampleOrder> Source { get; } = new ObservableCollection<SampleOrder>();
 
-    public DatabaseViewModel(ISampleDataService sampleDataService)
+    public DatabaseViewModel(DatabaseService sampleDataService)
     {
         _sampleDataService = sampleDataService;
     }
