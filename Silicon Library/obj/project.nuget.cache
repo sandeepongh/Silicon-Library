@@ -1,0 +1,207 @@
+{
+  "version": 2,
+  "dgSpecHash": "EE8ckgVLSCVlS0GaXdy6/T9Iy3HEBHVUAVQOzc9hof50LvBp81LFV4Sfg15k2dVsDMPudrM9hcXFY87Rj2sJHQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Extensions.Hosting. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.Hosting",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.WinUI.UI.Controls. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.WinUI.UI.Controls",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.WinUI.UI.Animations. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.WinUI.UI.Animations",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Xaml.Behaviors.WinUI.Managed. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Xaml.Behaviors.WinUI.Managed",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsAppSDK. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsAppSDK",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package WinUIEx. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "WinUIEx",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.WinUI.UI.Controls.DataGrid. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.WinUI.UI.Controls.DataGrid",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.Mvvm. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.Mvvm",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Newtonsoft.Json with version (>= 13.0.1)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 9.0.1 ]",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Runtime.win-x86. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.win-x86",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Windows.SDK.NET.Ref. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Windows.SDK.NET.Ref",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.App.Runtime.win-x86. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Runtime.win-arm64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.win-arm64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.App.Runtime.win-x64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsDesktop.App.Runtime.win-arm64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsDesktop.App.Runtime.win-x64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.App.Runtime.win-arm64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Runtime.win-x64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.win-x64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsDesktop.App.Runtime.win-x86. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    }
+  ]
+}

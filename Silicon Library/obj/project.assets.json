@@ -1,0 +1,441 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows10.0.19041": {
+      "Silicon Library.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        }
+      }
+    },
+    "net6.0-windows10.0.19041/win10-arm64": {
+      "Silicon Library.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        }
+      }
+    },
+    "net6.0-windows10.0.19041/win10-x64": {
+      "Silicon Library.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        }
+      }
+    },
+    "net6.0-windows10.0.19041/win10-x86": {
+      "Silicon Library.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Silicon Library.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Silicon Library.Core/1.0.0": {
+      "type": "project",
+      "path": "../Silicon Library.Core/Silicon Library.Core.csproj",
+      "msbuildProject": "../Silicon Library.Core/Silicon Library.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows10.0.19041": [
+      "CommunityToolkit.Mvvm >= 7.1.2",
+      "CommunityToolkit.WinUI.UI.Animations >= 7.1.2",
+      "CommunityToolkit.WinUI.UI.Controls >= 7.1.2",
+      "CommunityToolkit.WinUI.UI.Controls.DataGrid >= 7.1.2",
+      "Microsoft.Extensions.Hosting >= 6.0.1",
+      "Microsoft.WindowsAppSDK >= 1.1.3",
+      "Microsoft.Xaml.Behaviors.WinUI.Managed >= 2.0.8",
+      "Silicon Library.Core >= 1.0.0",
+      "WinUIEx >= 1.8.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+      "projectName": "Silicon Library",
+      "projectPath": "C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+      "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Sandeep V\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows10.0.19041.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "net6.0-windows10.0.19041": {
+          "targetAlias": "net6.0-windows10.0.19041.0",
+          "projectReferences": {
+            "C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
+              "projectPath": "C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows10.0.19041": {
+        "targetAlias": "net6.0-windows10.0.19041.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[7.1.2, )"
+          },
+          "CommunityToolkit.WinUI.UI.Animations": {
+            "target": "Package",
+            "version": "[7.1.2, )"
+          },
+          "CommunityToolkit.WinUI.UI.Controls": {
+            "target": "Package",
+            "version": "[7.1.2, )"
+          },
+          "CommunityToolkit.WinUI.UI.Controls.DataGrid": {
+            "target": "Package",
+            "version": "[7.1.2, )"
+          },
+          "Microsoft.Extensions.Hosting": {
+            "target": "Package",
+            "version": "[6.0.1, )"
+          },
+          "Microsoft.WindowsAppSDK": {
+            "target": "Package",
+            "version": "[1.1.3, )"
+          },
+          "Microsoft.Xaml.Behaviors.WinUI.Managed": {
+            "target": "Package",
+            "version": "[2.0.8, )"
+          },
+          "WinUIEx": {
+            "target": "Package",
+            "version": "[1.8.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-arm64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x86",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.Windows.SDK.NET.Ref",
+            "version": "[10.0.19041.28, 10.0.19041.28]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+            "version": "[6.0.13, 6.0.13]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.Windows.SDK.NET.Ref": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win10-arm64": {
+        "#import": []
+      },
+      "win10-x64": {
+        "#import": []
+      },
+      "win10-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Extensions.Hosting. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.Hosting",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.WinUI.UI.Controls. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.WinUI.UI.Controls",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.WinUI.UI.Animations. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.WinUI.UI.Animations",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Xaml.Behaviors.WinUI.Managed. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Xaml.Behaviors.WinUI.Managed",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsAppSDK. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsAppSDK",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package WinUIEx. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "WinUIEx",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.WinUI.UI.Controls.DataGrid. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.WinUI.UI.Controls.DataGrid",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CommunityToolkit.Mvvm. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "CommunityToolkit.Mvvm",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Newtonsoft.Json with version (>= 13.0.1)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 9.0.1 ]",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041",
+        "net6.0-windows10.0.19041/win10-arm64",
+        "net6.0-windows10.0.19041/win10-x64",
+        "net6.0-windows10.0.19041/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Runtime.win-x86. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.win-x86",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Windows.SDK.NET.Ref. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Windows.SDK.NET.Ref",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.App.Runtime.win-x86. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Runtime.win-arm64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.win-arm64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.App.Runtime.win-x64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsDesktop.App.Runtime.win-arm64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsDesktop.App.Runtime.win-x64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.App.Runtime.win-arm64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Runtime.win-x64. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.win-x64",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.WindowsDesktop.App.Runtime.win-x86. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+      "targetGraphs": [
+        "net6.0-windows10.0.19041"
+      ]
+    }
+  ]
+}

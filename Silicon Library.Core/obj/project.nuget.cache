@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "xylFJF81UpExo2SP1M2s8T9kGa/wY13SlPlK6q1XF5wZyw0ZqMnPjSMnv62XSzn+nxS7yqZEGGKVkh+ZuhWVwQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Newtonsoft.Json with version (>= 13.0.1)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 9.0.1 ]",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
