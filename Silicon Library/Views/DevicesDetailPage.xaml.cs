@@ -1,9 +1,11 @@
-﻿using CommunityToolkit.WinUI.UI.Animations;
+﻿using System.Security.Cryptography.Xml;
+using CommunityToolkit.WinUI.UI.Animations;
 
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 
 using Silicon_Library.Contracts.Services;
+using Silicon_Library.Core.Helpers;
 using Silicon_Library.ViewModels;
 
 namespace Silicon_Library.Views;
@@ -19,7 +21,9 @@ public sealed partial class DevicesDetailPage : Page
     {
         ViewModel = App.GetService<DevicesDetailViewModel>();
         InitializeComponent();
+
     }
+
 
     protected override void OnNavigatedTo(NavigationEventArgs e)
     {
@@ -40,4 +44,56 @@ public sealed partial class DevicesDetailPage : Page
             }
         }
     }
+
+    private void btnInvoke_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        ViewModel.ProgressesCollection.Add(new ProgressItem() { CurrentItemName = "Processing" });
+        var scrollableHeight = process_Scroll.ScrollableHeight;
+        if (scrollableHeight > 0)
+        {
+            process_Scroll.ScrollToVerticalOffset(scrollableHeight);
+        }
+    }
+
+    private void btnClear_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        chkDeviceCondition.IsChecked= false;;
+        txtUserId.Text= string.Empty;
+        txtUserName.Text = string.Empty;
+        txtDeviceId.Text = string.Empty;
+        dateReg.SelectedDate = null;
+        dateDue.SelectedDate = null;
+
+    }
+
+    private void btnSubmit_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+       
+        Records records = new Records() {
+            UserId = txtUserId.Text,
+            Username = txtUserName.Text,
+            DeviceId = Int32.Parse(txtDeviceId.Text),
+            DeviceName = txtDevice.Text,
+            DeviceCondition = chkDeviceCondition.IsChecked,
+            DateDue = dateDue.SelectedDate.HasValue ? (DateTime)dateDue.SelectedDate.Value.DateTime : null,
+            DateReg = dateReg.SelectedDate.HasValue ? (DateTime)dateReg.SelectedDate.Value.DateTime : null
+
+        };
+
+        DbRepository repo = new DbRepository();
+        try
+        {
+            repo.SaveRecord(records);
+        }
+        catch (Exception ex)
+        {
+            lblStatus.Text= ex.Message;
+        }
+        lblStatus.Text = "Success";
+
+
+
+    }
 }
+
+

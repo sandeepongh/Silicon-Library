@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
-    xmlns:models="using:Silicon_Library.Core.Models"
+    xmlns:models="using:Silicon_Library.Core.Models" xmlns:local="using:Silicon_Library.ViewModels"
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
@@ -35,73 +35,72 @@
                 <RelativePanel>
                     <Grid
                         x:Name="itemHero"
-                        Width="200"
-                        Height="200"
+                        Width="0"
+                        Height="0"
                         Margin="{StaticResource SmallRightMargin}"
                         Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         RelativePanel.AlignTopWithPanel="True"
                         RelativePanel.AlignLeftWithPanel="True">
-                        <FontIcon
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            FontSize="70"
-                            Glyph="{x:Bind ViewModel.Item.Symbol}"
-                            AutomationProperties.Name="{x:Bind ViewModel.Item.SymbolName}" />
+
                     </Grid>
 
-                    <TextBlock
-                        x:Name="title"
-                        Margin="{StaticResource XXSmallTopMargin}"
-                        RelativePanel.AlignTopWithPanel="True"
-                        RelativePanel.RightOf="itemHero"
-                        Style="{ThemeResource TitleTextBlockStyle}"
-                        Text="{x:Bind ViewModel.Item.Company, Mode=OneWay}" />
-
-                    <StackPanel x:Name="propertiesGroup1" RelativePanel.Below="itemHero">
-                        <StackPanel x:Name="statusGroup" Margin="{StaticResource SmallTopMargin}">
-                            <TextBlock Style="{ThemeResource SubtitleTextBlockStyle}" Text="Status" />
-                            <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="{x:Bind ViewModel.Item.Status}" />
-                        </StackPanel>
-
-                        <StackPanel x:Name="orderDateGroup" Margin="{StaticResource SmallTopMargin}">
-                            <TextBlock Style="{ThemeResource SubtitleTextBlockStyle}" Text="Order date" />
-                            <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="{x:Bind ViewModel.Item.OrderDate}" />
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel x:Name="propertiesGroup2" RelativePanel.Below="propertiesGroup1">
-                        <StackPanel x:Name="shipToGroup" Margin="{StaticResource SmallTopMargin}">
-                            <TextBlock Style="{ThemeResource SubtitleTextBlockStyle}" Text="Ship to" />
-                            <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="{x:Bind ViewModel.Item.ShipTo}" />
-                        </StackPanel>
-
-                        <StackPanel x:Name="orderTotalGroup" Margin="{StaticResource SmallTopMargin}">
-                            <TextBlock Style="{ThemeResource SubtitleTextBlockStyle}" Text="Order total" />
-                            <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="{x:Bind ViewModel.Item.OrderTotal}" />
-                        </StackPanel>
-                    </StackPanel>
-
+                    
                 </RelativePanel>
+                <Grid ColumnDefinitions="336, *" RowDefinitions ="*, Auto, *"  ColumnSpacing="9">
 
-                <TextBlock
-                    Margin="{StaticResource SmallTopMargin}"
-                    Style="{ThemeResource SubtitleTextBlockStyle}"
-                    Text="Note 1" />
-                <TextBlock
-                    Style="{ThemeResource BodyTextBlockStyle}"
-                    Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis hendrerit nulla, vel molestie libero. In nec ultricies magna, ultricies molestie ipsum. Mauris non dignissim velit. Etiam malesuada blandit mauris eu maximus. Quisque ornare, felis nec scelerisque mollis, risus dolor posuere magna, in gravida quam mi id nisi. Nullam mattis consequat ex. Cras nulla neque, dictum ac urna et, vestibulum feugiat ex. Pellentesque malesuada accumsan ligula, vel fringilla lacus facilisis sit amet. Proin convallis tempor arcu, ac placerat libero pretium ut. Praesent hendrerit nisl at lobortis viverra. Fusce vitae velit odio. Nam ut tortor sed purus finibus sollicitudin quis at ante. Ut sodales dolor vel eros mollis suscipit. Donec eu nulla id urna ultricies consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;" />
-
-                <TextBlock
-                    Margin="{StaticResource SmallTopMargin}"
-                    Style="{ThemeResource SubtitleTextBlockStyle}"
-                    Text="Note 2" />
-                <TextBlock
-                    Margin="{StaticResource MediumBottomMargin}"
-                    Style="{ThemeResource BodyTextBlockStyle}"
-                    Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis hendrerit nulla, vel molestie libero. In nec ultricies magna, ultricies molestie ipsum. Mauris non dignissim velit. Etiam malesuada blandit mauris eu maximus. Quisque ornare, felis nec scelerisque mollis, risus dolor posuere magna, in gravida quam mi id nisi. Nullam mattis consequat ex. Cras nulla neque, dictum ac urna et, vestibulum feugiat ex. Pellentesque malesuada accumsan ligula, vel fringilla lacus facilisis sit amet. Proin convallis tempor arcu, ac placerat libero pretium ut. Praesent hendrerit nisl at lobortis viverra. Fusce vitae velit odio. Nam ut tortor sed purus finibus sollicitudin quis at ante. Ut sodales dolor vel eros mollis suscipit. Donec eu nulla id urna ultricies consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;" />
+                    <StackPanel  Grid.Column="0" Grid.Row="0"  x:Name="grp1" BorderThickness="0" BorderBrush="Black" CornerRadius="5">
+                        <Grid ColumnDefinitions="100, *" RowDefinitions ="*, Auto, *">
+                            <StackPanel Grid.Column="0" Grid.Row="0"  x:Name="grpc1" HorizontalAlignment="Left" Padding="10">
+                                <Image Source="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceIcon}" Height="80" HorizontalAlignment="Left" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Grid.Row="0"  x:Name="grpc2" HorizontalAlignment="Left">
+                                <TextBlock Text="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceName}" 
+                                           FontSize="25"
+                                           Padding="8,4,4,4"
+                                           x:Name="txtTitle"  />
+                                <Button x:Name="btnInvoke" 
+                                        VerticalAlignment="Bottom" Margin="10" Style="{StaticResource AccentButtonStyle}" CornerRadius="16"
+                                        Click="btnInvoke_Click">Run Test</Button>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" x:Name="grp2" Background="#000" CornerRadius="8" Margin="16,0,16,16">
+                        <TextBlock Text="Terminal Output:" FontSize="25" Foreground="PaleGreen" Margin="20"/>
+                        <ItemsRepeaterScrollHost Height="550">
+                            <ScrollViewer x:Name="process_Scroll" >
+                                <ItemsRepeater x:Name="processRepeater" ItemsSource="{x:Bind ViewModel.ProgressesCollection}">
+                                    <ItemsRepeater.ItemTemplate>
+                                        <DataTemplate x:DataType="local:ProgressItem">
+                                            <TextBlock Text="{x:Bind CurrentItemName}" Padding="20,0,20,0" Foreground="PaleGreen"/>
+                                        </DataTemplate>
+                                    </ItemsRepeater.ItemTemplate>
+                                </ItemsRepeater>
+                            </ScrollViewer>
+                        </ItemsRepeaterScrollHost>
+                        
+                    </StackPanel>
+                    <StackPanel x:Name="panelUIData" Grid.Row="1" Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="5" Margin="0,20,0,0">
+                        <TextBlock Text="Enter Data" HorizontalAlignment="Left" FontSize="23" />
+                        <StackPanel x:Name="panelDetails" Margin="10" HorizontalAlignment="Stretch">
+                            <TextBox x:Name="txtDevice" PlaceholderText="Device Name" Width="Auto" Margin="10" Text="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceName}"/>
+                            <TextBox x:Name="txtUserId" PlaceholderText="User ID" Width="Auto" Margin="10"/>
+                            <TextBox x:Name="txtUserName" PlaceholderText="User Name" Width="Auto" Margin="10"/>
+                            <TextBox x:Name="txtDeviceId" PlaceholderText="Device ID" Width="Auto" Margin="10"/>
+                            <DatePicker x:Name="dateReg"   Header="Device Registered On:"  Width="Auto" Margin="10" />
+                            <DatePicker x:Name="dateDue"  Header="Device Returned On:"  Width="Auto" Margin="10"/>
+                            <CheckBox x:Name="chkDeviceCondition" Content="Is Device Damaged?" Width="Auto" Margin="10"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <Button x:Name="btnSubmit" Content="Submit Data" HorizontalAlignment="Left" Margin="10" Click="btnSubmit_Click"/>
+                                <Button x:Name="btnClear" Content="Clear Data" HorizontalAlignment="Left" Margin="10" Click="btnClear_Click" />
+                            </StackPanel>
+                            <TextBlock x:Name="lblStatus"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
             </StackPanel>
         </ScrollViewer>
+        
     </Grid>
 </Page>
