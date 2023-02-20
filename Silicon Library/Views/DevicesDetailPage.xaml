@@ -58,15 +58,21 @@
                             <StackPanel Grid.Column="1" Grid.Row="0"  x:Name="grpc2" HorizontalAlignment="Left">
                                 <TextBlock Text="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceName}" 
                                            FontSize="25"
-                                           Padding="8,4,4,4"
+                                           Padding="8,4,0,0"
                                            x:Name="txtTitle"  />
                                 <Button x:Name="btnInvoke" 
                                         VerticalAlignment="Bottom" Margin="10" Style="{StaticResource AccentButtonStyle}" CornerRadius="16"
-                                        Click="btnInvoke_Click">Run Test</Button>
+                                        Click="btnInvoke_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <SymbolIcon Symbol="Play" Margin="0,0,5,0"/>
+                                        <TextBlock Text="Run Test"/>
+                                    </StackPanel>
+
+                                </Button>
                             </StackPanel>
                         </Grid>
                     </StackPanel>
-                    <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" x:Name="grp2" Background="#000" CornerRadius="8" Margin="16,0,16,16">
+                    <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" x:Name="grp2" Background="Black"  CornerRadius="8" Margin="16,0,16,16">
                         <TextBlock Text="Terminal Output:" FontSize="25" Foreground="PaleGreen" Margin="20"/>
                         <ItemsRepeaterScrollHost Height="550">
                             <ScrollViewer x:Name="process_Scroll" >

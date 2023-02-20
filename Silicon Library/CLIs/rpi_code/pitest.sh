@@ -1,4 +1,3 @@
-#copy this script and create pitest.sh in your pitest home directory
 echo "Running Raspberry-Pi Test Program ..."
 if ip a | grep -q eth0 ; then echo "Ethernet: found" ; else echo "Ethernet" ; fi;
 if ip a | grep -q wlan0 ; then echo "Wi-Fi: found" ; else echo "Wi-Fi" ; fi;

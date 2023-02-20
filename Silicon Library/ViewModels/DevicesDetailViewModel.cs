@@ -30,14 +30,6 @@ public class DevicesDetailViewModel : ObservableRecipient, INavigationAware
     public DevicesDetailViewModel()
     {
         this.ProgressesCollection = new();
-        this.ProgressesCollection.Add(new ProgressItem()
-        {
-            CurrentItemName = "First"
-        });
-        this.ProgressesCollection.Add(new ProgressItem()
-        {
-            CurrentItemName = "Second"
-        });
 
     }
 

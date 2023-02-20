@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.Xml;
+using System.Text;
 using CommunityToolkit.WinUI.UI.Animations;
 
 using Microsoft.UI.Xaml.Controls;
@@ -47,7 +48,8 @@ public sealed partial class DevicesDetailPage : Page
 
     private void btnInvoke_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        ViewModel.ProgressesCollection.Add(new ProgressItem() { CurrentItemName = "Processing" });
+        var logText = File.ReadAllText(@"C:\Users\Sandeep V\source\repos\Silicon-Library\Silicon-Library\Silicon Library\CLIs\TerminalLog.json", Encoding.Default);
+        ViewModel.ProgressesCollection.Add(new ProgressItem() { CurrentItemName = logText });
         var scrollableHeight = process_Scroll.ScrollableHeight;
         if (scrollableHeight > 0)
         {

@@ -3,6 +3,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Running Arduino Test Program...");
   Serial.println("This Arduino Is Working!");
+  Serial.end();
 }
 
 void loop() {
