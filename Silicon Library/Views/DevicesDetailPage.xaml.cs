@@ -48,7 +48,7 @@ public sealed partial class DevicesDetailPage : Page
 
     private void btnInvoke_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        var logText = File.ReadAllText(@"C:\Users\Sandeep V\source\repos\Silicon-Library\Silicon-Library\Silicon Library\CLIs\TerminalLog.json", Encoding.Default);
+        var logText = File.ReadAllText("/Assets/CLIs/TerminalLog.json");
         ViewModel.ProgressesCollection.Add(new ProgressItem() { CurrentItemName = logText });
         var scrollableHeight = process_Scroll.ScrollableHeight;
         if (scrollableHeight > 0)
@@ -91,7 +91,7 @@ public sealed partial class DevicesDetailPage : Page
         {
             lblStatus.Text= ex.Message;
         }
-        lblStatus.Text = "Success";
+        lblStatus.Text = "Success!";
 
 
 

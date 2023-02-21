@@ -15,15 +15,21 @@
             BorderThickness="0.8">
         <controls:DataGrid
             MinWidth="1000"
+            IsReadOnly="True"
             AlternatingRowBackground="#40888888"
-            AutoGenerateColumns="True"
+            AutoGenerateColumns="False"
             GridLinesVisibility="None"
             VerticalGridLinesBrush="#90888888"
             BorderThickness="0.4"
             ItemsSource="{x:Bind ViewModel.Source, Mode=OneWay}">
             <controls:DataGrid.Columns>
-
-                
+                <controls:DataGridTextColumn Header="Device" Binding="{Binding DeviceName}" />
+                <controls:DataGridTextColumn Header="Device ID" Binding="{Binding DeviceId}" />
+                <controls:DataGridTextColumn Header="ID" Binding="{Binding UserId}" />
+                <controls:DataGridTextColumn Header="Name" Binding="{Binding Username}" />
+                <controls:DataGridTextColumn Header="Registered Date" Binding="{Binding DateReg}" />
+                <controls:DataGridTextColumn Header="Returned Date" Binding="{Binding DateDue}" />
+                <controls:DataGridCheckBoxColumn Header="Damaged" Binding="{Binding DeviceCondition}" />
             </controls:DataGrid.Columns>
         </controls:DataGrid>
     </Grid>

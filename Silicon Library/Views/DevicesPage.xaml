@@ -22,24 +22,18 @@
             StretchContentForSingleRow="False">
             <controls:AdaptiveGridView.ItemTemplate>
                 <DataTemplate x:DataType="models:DeviceDetails">
-
                     <Grid
                         x:Name="itemThumbnail"
                         Padding="8" Margin="8">
-
-                        <StackPanel>   
-                        
+                        <StackPanel>
                             <Image Source="{x:Bind DeviceIcon }" Height="100" Width="100" />
-
                             <TextBlock
                                 Margin="{StaticResource XXSmallTopMargin}"
                                 HorizontalAlignment="Center"
                                 Style="{ThemeResource BodyTextStyle}"
                                 Text="{x:Bind DeviceName}" />
                         </StackPanel>
-                        
                     </Grid>
-                    
                 </DataTemplate>
             </controls:AdaptiveGridView.ItemTemplate>
         </controls:AdaptiveGridView>
