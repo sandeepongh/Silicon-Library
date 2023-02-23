@@ -9,6 +9,7 @@
     xmlns:models="using:Silicon_Library.Core.Helpers" 
     mc:Ignorable="d">
 
+
     <Grid x:Name="ContentArea">
         <controls:AdaptiveGridView
             animations:Connected.ListItemElementName="itemThumbnail"
@@ -19,7 +20,7 @@
             ItemClickCommand="{x:Bind ViewModel.ItemClickCommand}"
             ItemsSource="{x:Bind ViewModel.Source,Mode=OneWay}"
             SelectionMode="None"
-            StretchContentForSingleRow="False">
+            StretchContentForSingleRow="False" >
             <controls:AdaptiveGridView.ItemTemplate>
                 <DataTemplate x:DataType="models:DeviceDetails">
                     <Grid

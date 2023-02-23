@@ -12,7 +12,7 @@
   <Identity
     Name="C98A5E26-2F66-4674-9C33-3C6FC62EF9EA"
     Publisher="CN=Sandeep V"
-    Version="1.0.0.0" />
+    Version="0.5.10.0" />
 
   <Properties>
     <DisplayName>Silicon Library</DisplayName>

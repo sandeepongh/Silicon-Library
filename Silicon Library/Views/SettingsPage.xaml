@@ -6,6 +6,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:helpers="using:Silicon_Library.Helpers"
     xmlns:xaml="using:Microsoft.UI.Xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+
+
     mc:Ignorable="d">
     <Page.Resources>
         <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
@@ -16,7 +19,14 @@
             <!--<TextBlock x:Uid="Settings_Personalization" Style="{ThemeResource SubtitleTextBlockStyle}" />-->
             <StackPanel x:Name="DriverArea">
                 <TextBlock Text="Drivers" Style="{ThemeResource SubtitleTextBlockStyle}" />
-                <Button Content="Install Drivers" Margin="0,10,0,0"/>
+                <Button x:Name="btnDrivers" 
+                                        VerticalAlignment="Bottom" Margin="0,10,0,5"
+                                        Click="btnDrivers_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Download" Margin="0,0,5,0"/>
+                        <TextBlock Text="Install Drivers" />
+                    </StackPanel>
+                </Button>
             </StackPanel>
             <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
                 <TextBlock x:Uid="Settings_Theme" Style="{ThemeResource SubtitleTextBlockStyle}" />
