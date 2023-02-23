@@ -90,6 +90,7 @@ public sealed partial class DevicesDetailPage : Page
 
         };
 
+
         DbRepository repo = new DbRepository();
         try
         {

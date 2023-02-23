@@ -100,8 +100,19 @@
                             <DatePicker x:Name="dateDue"  Header="Device Returned On:"  Width="Auto" Margin="10"/>
                             <CheckBox x:Name="chkDeviceCondition" Content="Is Device Damaged?" Width="Auto" Margin="10"/>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                                <Button x:Name="btnSubmit" Content="Submit Data" HorizontalAlignment="Left" Margin="10" Click="btnSubmit_Click"/>
-                                <Button x:Name="btnClear" Content="Clear Data" HorizontalAlignment="Left" Margin="10" Click="btnClear_Click" />
+
+                                <Button x:Name="btnSubmit" HorizontalAlignment="Left" Margin="10" Click="btnSubmit_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <SymbolIcon Symbol="Accept" Margin="0,0,5,0"/>
+                                        <TextBlock Text="Submit" />
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="btnClear" HorizontalAlignment="Left" Margin="10" Click="btnClear_Click" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <SymbolIcon Symbol="Cancel" Margin="0,0,5,0"/>
+                                        <TextBlock Text="Clear" />
+                                    </StackPanel>
+                                </Button>
                             </StackPanel>
                             <TextBlock HorizontalAlignment="Center" x:Name="lblStatus"/>
                         </StackPanel>

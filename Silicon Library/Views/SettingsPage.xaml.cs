@@ -38,4 +38,9 @@ public sealed partial class SettingsPage : Page
         var res = powerShell.AddScript(exe).Invoke();
 
     }
+
+    private void btnAddDevices_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+
+    }
 }
