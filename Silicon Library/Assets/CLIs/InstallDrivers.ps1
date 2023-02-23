@@ -7,6 +7,3 @@ Write-Output "Installing Drivers"
 Write-Output "------------------"
 PNPUtil.exe /add-driver ".\rpi_code\RNDIS.inf" /install 
 .\arduino_code\arduino-cli.exe core install arduino:avr 
-.\arduino_code\arduino-cli.exe core install arduino:samd
-
-New-Item -Path '~\Silicon-Library' -ItemType Directory

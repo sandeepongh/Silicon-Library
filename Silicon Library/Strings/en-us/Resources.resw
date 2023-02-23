@@ -151,10 +151,10 @@
     <value>Manage your Silicon like a Library!</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
-    <value>Privacy Statement</value>
+    <value>Github</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
-    <value>https://YourPrivacyUrlGoesHere/</value>
+    <value>https://github.com/thenoelboi/Silicon-Library</value>
   </data>
   <data name="TerminalLogPath" xml:space="preserve">
     <value>".\CLIs\TerminalLog.txt"</value>

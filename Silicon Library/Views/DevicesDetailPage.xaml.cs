@@ -48,8 +48,16 @@ public sealed partial class DevicesDetailPage : Page
 
     private void btnInvoke_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        var logText = File.ReadAllText("/Assets/CLIs/TerminalLog.json");
-        ViewModel.ProgressesCollection.Add(new ProgressItem() { CurrentItemName = logText });
+        //var logText = File.ReadAllText("/Assets/CLIs/TerminalLog.json");
+        //ViewModel.ProgressesCollection.Add(new ProgressItem() { CurrentItemName = logText });
+        string clipath = txtCliPath.Text;
+        var result = RunDeviceTest.Invoke(clipath);
+        result.ForEach(x =>
+        {
+            ViewModel.ProgressesCollection.Add(new ProgressItem() { CurrentItemName = x.CurrentItemName });
+        });
+        
+
         var scrollableHeight = process_Scroll.ScrollableHeight;
         if (scrollableHeight > 0)
         {

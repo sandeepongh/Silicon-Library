@@ -5,7 +5,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
-    xmlns:models="using:Silicon_Library.Core.Models" xmlns:local="using:Silicon_Library.ViewModels"
+    xmlns:models="using:Silicon_Library.Core.Models"
+    xmlns:local="using:Silicon_Library.Core.Helpers"
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
@@ -65,10 +66,11 @@
                                         Click="btnInvoke_Click">
                                     <StackPanel Orientation="Horizontal">
                                         <SymbolIcon Symbol="Play" Margin="0,0,5,0"/>
-                                        <TextBlock Text="Run Test"/>
+                                        <TextBlock Text="Run Test" />
                                     </StackPanel>
-
+                                   
                                 </Button>
+                                <TextBox x:Name="txtCliPath" Text="{x:Bind ViewModel.Item.DeviceDetailsModel.CLIPath}" Visibility="Collapsed" ></TextBox>
                             </StackPanel>
                         </Grid>
                     </StackPanel>

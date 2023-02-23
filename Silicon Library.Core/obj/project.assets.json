@@ -6976,11 +6976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
       "projectName": "Silicon Library.Core",
-      "projectPath": "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+      "projectPath": "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
       "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon-Library\\Silicon Library.Core\\obj\\",
+      "outputPath": "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon Library.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

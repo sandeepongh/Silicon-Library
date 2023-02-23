@@ -14,7 +14,7 @@ public class DbRepository
     private  IDbConnection _db;
      public DbRepository()
     {
-        _db = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Sandeep V\\Github Repos\\Silicon-Library\\Silicon Library.Core\\Database\\Database.mdf\";Integrated Security=True;Connect Timeout=30");
+        _db = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon Library\\Assets\\Database\\Database.mdf; Integrated Security=True;Connect Timeout=30");
     }
     public void SaveRecord(Records records)
     {

@@ -68,10 +68,4 @@ public class DetailViewModel
         get; set;
     }
 }
-public class ProgressItem
-{
-    public string? CurrentItemName
-    {
-        get; set;
-    }
-}
+
