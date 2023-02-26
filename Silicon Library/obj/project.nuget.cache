@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PyVatwL0F/ybS7W8Tolb5KeHx2C65RpGbwErwN+nNIiMnig83ZDlsJvS5AcgxLIWS0VysKwow/85qKcwz8mhXQ==",
+  "dgSpecHash": "7FBAxQhvMfN/MvQdHd/EW8TA9dBEGKi/DC98oX/jzV1Ckbe3Orq7bPQbLIinyHlGrucD8asrkGe0jdMrwve8Aw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
   "expectedPackageFiles": [
@@ -245,16 +245,16 @@
     "C:\\Users\\Sandeep V\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Sandeep V\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Sandeep V\\.nuget\\packages\\winuiex\\1.8.0\\winuiex.1.8.0.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.13\\microsoft.netcore.app.runtime.win-x86.6.0.13.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.14\\microsoft.netcore.app.runtime.win-x86.6.0.14.nupkg.sha512",
     "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x86.6.0.13.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.13\\microsoft.netcore.app.runtime.win-arm64.6.0.13.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.13.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.13.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\6.0.13\\microsoft.aspnetcore.app.runtime.win-arm64.6.0.13.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.13\\microsoft.netcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.13.nupkg.sha512"
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.14\\microsoft.aspnetcore.app.runtime.win-x86.6.0.14.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.14\\microsoft.netcore.app.runtime.win-arm64.6.0.14.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.14\\microsoft.aspnetcore.app.runtime.win-x64.6.0.14.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.14\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.14.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.14.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\6.0.14\\microsoft.aspnetcore.app.runtime.win-arm64.6.0.14.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.14\\microsoft.netcore.app.runtime.win-x64.6.0.14.nupkg.sha512",
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.14\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.14.nupkg.sha512"
   ],
   "logs": []
 }

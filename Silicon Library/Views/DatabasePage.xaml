@@ -7,12 +7,12 @@
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
 
-    <Grid x:Name="ContentArea"  
-            Background="#20888888"
-            Margin="8"
-            CornerRadius="6"
-            BorderBrush="#90888888"
-            BorderThickness="0.8">
+    <Grid
+        CornerRadius="4"
+        Margin="8"
+        BorderBrush="#8888"
+        BorderThickness="1"
+        Background="#4444">
         <controls:DataGrid
             MinWidth="1000"
             IsReadOnly="True"
@@ -20,7 +20,7 @@
             AutoGenerateColumns="False"
             GridLinesVisibility="None"
             VerticalGridLinesBrush="#90888888"
-            BorderThickness="0.4"
+            CornerRadius="8"
             ItemsSource="{x:Bind ViewModel.Source, Mode=OneWay}">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn Header="Device" Binding="{Binding DeviceName}" />

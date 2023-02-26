@@ -5,5 +5,10 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>Silicon Library (Package)</ActiveDebugProfile>
+    <_LastSelectedProfileId>C:\Users\Sandeep V\source\repos\Silicon-Library\Silicon Library\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86|x64|arm64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
 </Project>

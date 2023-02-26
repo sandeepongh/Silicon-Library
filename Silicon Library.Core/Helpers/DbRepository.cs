@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using System.Speech.Recognition.SrgsGrammar;
+using System.Reflection;
 
 namespace Silicon_Library.Core.Helpers;
 public class DbRepository
@@ -14,7 +15,8 @@ public class DbRepository
     private  IDbConnection _db;
      public DbRepository()
     {
-        _db = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon Library\\Assets\\Database\\Database.mdf; Integrated Security=True;Connect Timeout=30");
+        string basePath = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+        _db = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+basePath+"\\Assets\\Database\\Database.mdf; Integrated Security=True;Connect Timeout=30");
     }
     public void SaveRecord(Records records)
     {

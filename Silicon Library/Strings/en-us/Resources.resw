@@ -156,7 +156,7 @@
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
     <value>https://github.com/thenoelboi/Silicon-Library</value>
   </data>
-  <data name="TerminalLogPath" xml:space="preserve">
-    <value>".\CLIs\TerminalLog.txt"</value>
+  <data name="Shell_Help.Content" xml:space="preserve">
+    <value>Help</value>
   </data>
 </root>

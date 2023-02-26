@@ -23,7 +23,7 @@ namespace Silicon_Library.Core.Helpers
             //string basePath = "C:\\Users\\Sandeep V\\source\\repos\\Silicon-Library\\Silicon Library\\bin\\x64\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\AppX\\Assets\\CLIs\\";
             string basePath = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
             string exe = "Powershell.exe -File '"+basePath+cliPath+"'";
-            string path = AppDomain.CurrentDomain.BaseDirectory + cliPath;
+            //string path = AppDomain.CurrentDomain.BaseDirectory + cliPath;
             var powerShell = PowerShell.Create();
             var res = powerShell.AddScript(exe).Invoke();
 
