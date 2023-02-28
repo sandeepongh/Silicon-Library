@@ -8,11 +8,10 @@
     mc:Ignorable="d">
 
     <ScrollViewer
-        CornerRadius="8"
+        CornerRadius="4"
         Margin="8"
-        BorderBrush="#8888"
-        BorderThickness="1"
-        Background="#4444"
+        Padding="-2"
+        Background="#2888"
         VerticalScrollMode="Enabled"
         HorizontalScrollMode="Disabled"            
         VerticalScrollBarVisibility="Auto"
@@ -25,7 +24,7 @@
             AutoGenerateColumns="False"
             GridLinesVisibility="None"
             VerticalGridLinesBrush="#90888888"
-            CornerRadius="8"
+            CornerRadius="4"
             ItemsSource="{x:Bind ViewModel.Source, Mode=OneWay}">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn Header="Device" Binding="{Binding DeviceName}" />

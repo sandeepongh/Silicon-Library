@@ -22,8 +22,8 @@ public class DbRepository
     {
         _db.Open();
         var sql = @"INSERT INTO Records 
-([UserId],[Username],[DeviceId],[DeviceName],[DeviceCondition],[DateReg],[DateDue])
-VALUES (@UserId,@Username,@DeviceId,@DeviceName,@DeviceCondition,@DateReg,@DateDue);";
+([SNO],[UserId],[Username],[DeviceId],[DeviceName],[DeviceCondition],[DateReg],[DateDue])
+VALUES (@Sno,@UserId,@Username,@DeviceId,@DeviceName,@DeviceCondition,@DateReg,@DateDue);";
 
         using (var connection = _db)
         {
@@ -35,7 +35,7 @@ VALUES (@UserId,@Username,@DeviceId,@DeviceName,@DeviceCondition,@DateReg,@DateD
     {
         IEnumerable<Records> inventoryAudits = new List<Records>();
         _db.Open();
-        var sql = @"SELECT [UserId],[Username],[DeviceId],[DeviceName],[DeviceCondition],[DateReg],[DateDue] FROM Records";
+        var sql = @"SELECT [SNO],[UserId],[Username],[DeviceId],[DeviceName],[DeviceCondition],[DateReg],[DateDue] FROM Records";
         inventoryAudits = _db.Query<Records>(sql);
         _db.Close();
         return inventoryAudits;

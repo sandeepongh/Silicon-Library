@@ -51,7 +51,7 @@
                 </RelativePanel>
                 <Grid ColumnDefinitions="336, *" RowDefinitions ="*, Auto, *"  ColumnSpacing="9">
 
-                    <StackPanel VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"  x:Name="grp1" BorderThickness="1" BorderBrush="#8444" Background="#4444" CornerRadius="8">
+                    <StackPanel VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"  x:Name="grp1" BorderThickness="1" BorderBrush="#2888" Background="#2888" CornerRadius="4">
                         <Grid VerticalAlignment="Center" ColumnDefinitions="100, *" RowDefinitions ="*, Auto, *">
                             <StackPanel Grid.Column="0" Grid.Row="0"  x:Name="grpc1" HorizontalAlignment="Left" Padding="10">
                                 <Image Source="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceIcon}" Height="80" HorizontalAlignment="Left" />
@@ -76,7 +76,7 @@
                             </StackPanel>
                         </Grid>
                     </StackPanel>
-                    <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" x:Name="grp2" Background="Black"  CornerRadius="8" Margin="16,0,16,16">
+                    <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" x:Name="grp2" Background="Black"  CornerRadius="4" Margin="16,0,16,16">
                         <TextBlock Text="Terminal Output:" FontSize="25" Foreground="PaleGreen" Margin="20"/>
                         <ItemsRepeaterScrollHost Height="550">
                             <ScrollViewer x:Name="process_Scroll" >
@@ -91,7 +91,7 @@
                         </ItemsRepeaterScrollHost>
                         
                     </StackPanel>
-                    <StackPanel x:Name="panelUIData" Grid.Row="1" Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="5" Margin="0,20,0,0">
+                    <StackPanel x:Name="panelUIData" Grid.Row="1" Grid.Column="0" CornerRadius="5" Margin="0,20,0,0">
                         <TextBlock Text="Enter Data" HorizontalAlignment="Left" FontSize="23" />
                         <StackPanel x:Name="panelDetails" Margin="10" HorizontalAlignment="Stretch">
                             <TextBox x:Name="txtDevice" PlaceholderText="Device Name" Width="Auto" Margin="10" Text="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceName}" Visibility="Collapsed"/>

@@ -110,6 +110,7 @@ public sealed partial class DevicesDetailPage : Page
         {
             Records records = new Records()
             {
+                Sno = 1,
                 UserId = txtUserId.Text,
                 Username = txtUserName.Text,
                 DeviceId = Int32.Parse(txtDeviceId.Text),
