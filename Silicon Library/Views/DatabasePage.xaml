@@ -7,13 +7,18 @@
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
 
-    <Grid
-        CornerRadius="4"
+    <ScrollViewer
+        CornerRadius="8"
         Margin="8"
         BorderBrush="#8888"
         BorderThickness="1"
-        Background="#4444">
+        Background="#4444"
+        VerticalScrollMode="Enabled"
+        HorizontalScrollMode="Disabled"            
+        VerticalScrollBarVisibility="Auto"
+        HorizontalScrollBarVisibility="Auto">
         <controls:DataGrid
+            CanBeScrollAnchor="True"
             MinWidth="1000"
             IsReadOnly="True"
             AlternatingRowBackground="#40888888"
@@ -32,5 +37,5 @@
                 <controls:DataGridCheckBoxColumn Header="Damaged" Binding="{Binding DeviceCondition}" />
             </controls:DataGrid.Columns>
         </controls:DataGrid>
-    </Grid>
+    </ScrollViewer>
 </Page>

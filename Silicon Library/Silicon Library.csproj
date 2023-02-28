@@ -23,9 +23,11 @@
     <AppxBundle>Never</AppxBundle>
   </PropertyGroup>
   <ItemGroup>
-    <Content Remove="Assets\Database\Database.mdf" />
     <Content Remove="Assets\Database\Database_log.ldf" />
     <Content Remove="Assets\Icon\raspi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\Database\Database.mdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -60,6 +62,12 @@
     <Resource Include="Assets\Icon\raspi.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Assets\Database\Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">

@@ -8,6 +8,7 @@ using Microsoft.UI.Xaml.Navigation;
 using Silicon_Library.Contracts.Services;
 using Silicon_Library.Core.Helpers;
 using Silicon_Library.ViewModels;
+using Windows.UI;
 
 namespace Silicon_Library.Views;
 
@@ -76,31 +77,54 @@ public sealed partial class DevicesDetailPage : Page
 
     }
 
-    private void btnSubmit_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    public void btnSubmit_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-       
-        Records records = new Records() {
-            UserId = txtUserId.Text,
-            Username = txtUserName.Text,
-            DeviceId = Int32.Parse(txtDeviceId.Text),
-            DeviceName = txtDevice.Text,
-            DeviceCondition = chkDeviceCondition.IsChecked,
-            DateDue = dateDue.SelectedDate.HasValue ? (DateTime)dateDue.SelectedDate.Value.DateTime : null,
-            DateReg = dateReg.SelectedDate.HasValue ? (DateTime)dateReg.SelectedDate.Value.DateTime : null
+        int flag = 0;
 
+        if (String.IsNullOrEmpty(txtUserId.Text))
+            {
+                lblStatus.Text = "Enter User ID";
+                flag = 1;
+            };
+
+        if (String.IsNullOrEmpty(txtUserName.Text))
+            {
+                lblStatus.Text = "Enter User Name";
+                flag = 1;
+            };
+
+        if (String.IsNullOrEmpty(txtDeviceId.Text))
+        {
+            lblStatus.Text = "Enter Device ID";
+            flag = 1;
         };
 
+        //if (String.IsNullOrEmpty(txtDevice.Text))
+        //{
+        //    lblStatus.Text = "Enter Device Name";
+        //    flag = 1;
+        //};
 
-        DbRepository repo = new DbRepository();
-        try
+
+        if (flag == 0)
         {
+            Records records = new Records()
+            {
+                UserId = txtUserId.Text,
+                Username = txtUserName.Text,
+                DeviceId = Int32.Parse(txtDeviceId.Text),
+                DeviceName = txtDevice.Text,
+                DeviceCondition = chkDeviceCondition.IsChecked,
+                DateDue = dateDue.SelectedDate.HasValue ? (DateTime)dateDue.SelectedDate.Value.DateTime : null,
+                DateReg = dateReg.SelectedDate.HasValue ? (DateTime)dateReg.SelectedDate.Value.DateTime : null
+
+            };
+
+            DbRepository repo = new DbRepository();
             repo.SaveRecord(records);
-        }
-        catch (Exception ex)
-        {
-            lblStatus.Text= ex.Message;
-        }
-        lblStatus.Text = "Success!";
+            lblStatus.Text = "Success!";
+        } 
+
 
 
 

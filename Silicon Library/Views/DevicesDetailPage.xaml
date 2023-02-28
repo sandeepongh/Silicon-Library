@@ -51,8 +51,8 @@
                 </RelativePanel>
                 <Grid ColumnDefinitions="336, *" RowDefinitions ="*, Auto, *"  ColumnSpacing="9">
 
-                    <StackPanel  Grid.Column="0" Grid.Row="0"  x:Name="grp1" BorderThickness="1" BorderBrush="#8444" Background="#4444" CornerRadius="8">
-                        <Grid ColumnDefinitions="100, *" RowDefinitions ="*, Auto, *">
+                    <StackPanel VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"  x:Name="grp1" BorderThickness="1" BorderBrush="#8444" Background="#4444" CornerRadius="8">
+                        <Grid VerticalAlignment="Center" ColumnDefinitions="100, *" RowDefinitions ="*, Auto, *">
                             <StackPanel Grid.Column="0" Grid.Row="0"  x:Name="grpc1" HorizontalAlignment="Left" Padding="10">
                                 <Image Source="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceIcon}" Height="80" HorizontalAlignment="Left" />
                             </StackPanel>
@@ -94,7 +94,7 @@
                     <StackPanel x:Name="panelUIData" Grid.Row="1" Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="5" Margin="0,20,0,0">
                         <TextBlock Text="Enter Data" HorizontalAlignment="Left" FontSize="23" />
                         <StackPanel x:Name="panelDetails" Margin="10" HorizontalAlignment="Stretch">
-                            <TextBox x:Name="txtDevice" PlaceholderText="Device Name" Width="Auto" Margin="10" Text="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceName}"/>
+                            <TextBox x:Name="txtDevice" PlaceholderText="Device Name" Width="Auto" Margin="10" Text="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceName}" Visibility="Collapsed"/>
                             <TextBox x:Name="txtUserId" PlaceholderText="User ID *" Width="Auto" Margin="10"/>
                             <TextBox x:Name="txtUserName" PlaceholderText="User Name *" Width="Auto" Margin="10"/>
                             <TextBox x:Name="txtDeviceId" PlaceholderText="Device ID *" Width="Auto" Margin="10"/>

@@ -19,6 +19,7 @@ public class PageService : IPageService
         Configure<DatabaseViewModel, DatabasePage>();
         Configure<SettingsViewModel, SettingsPage>();
         Configure<HelpViewModel, HelpPage>();
+        Configure<AddDeviceViewModel, AddDevicePage>();
     }
 
     public Type GetPageType(string key)

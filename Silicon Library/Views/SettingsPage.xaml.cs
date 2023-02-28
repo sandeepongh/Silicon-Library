@@ -41,6 +41,9 @@ public sealed partial class SettingsPage : Page
 
     private void btnAddDevices_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        // Navigate to the appropriate destination page, configuring the new page
+        // by passing required information as a navigation parameter
+        //var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
+        this.Frame.Navigate(typeof(AddDevicePage));
     }
 }

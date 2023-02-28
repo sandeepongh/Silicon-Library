@@ -22,16 +22,6 @@
             ItemsSource="{x:Bind ViewModel.Source,Mode=OneWay}"
             SelectionMode="None"
             StretchContentForSingleRow="False" >
-            <!--<StackPanel Orientation="Horizontal">
-                <Button
-                        x:Name="addDeviceThumbnail"
-                        Padding="8" Margin="8">
-                    <StackPanel Orientation="Horizontal">
-                        <FontIcon Glyph="&#xe710;"/>
-                        <TextBlock VerticalAlignment="Center" Text="Add A Device" />
-                    </StackPanel>
-                </Button>
-            </StackPanel>-->
             <controls:AdaptiveGridView.ItemTemplate>
                 <DataTemplate x:DataType="models:DeviceDetails">
                     <Grid
