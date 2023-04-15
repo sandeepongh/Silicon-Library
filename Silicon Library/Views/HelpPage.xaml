@@ -16,7 +16,21 @@
                        TextWrapping="NoWrap"
                        Style="{StaticResource CaptionTextBlockStyle}"
                        Margin="28,0,0,0"/>
-        
+
+
+        <ScrollViewer
+        CornerRadius="4"
+        Margin="8"
+        Padding="-2"
+        Background="#2888"
+        VerticalScrollMode="Enabled"
+        HorizontalScrollMode="Disabled"            
+        VerticalScrollBarVisibility="Auto"
+        HorizontalScrollBarVisibility="Auto">
+            
+        </ScrollViewer>
+
     </Grid>
+
 
 </Page>

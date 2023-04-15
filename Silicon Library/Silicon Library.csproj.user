@@ -5,10 +5,13 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>Silicon Library (Package)</ActiveDebugProfile>
-    <_LastSelectedProfileId>C:\Users\Sandeep V\source\repos\Silicon-Library\Silicon Library\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>C:\Users\Sandeep V\Silicon-Library\Silicon Library\Properties\PublishProfiles\win10-x64.pubxml</_LastSelectedProfileId>
     <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>False</AppxShowAllApps>
-    <AppxBuildConfigurationSelection>x86|x64|arm64</AppxBuildConfigurationSelection>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

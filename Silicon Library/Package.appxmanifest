@@ -10,9 +10,9 @@
   IgnorableNamespaces="uap rescap genTemplate">
 
   <Identity
-    Name="C98A5E26-2F66-4674-9C33-3C6FC62EF9EA"
+    Name="siliconlibrary"
     Publisher="CN=Sandeep V"
-    Version="0.5.11.0" />
+    Version="1.0.0.0" />
 
   <Properties>
     <DisplayName>Silicon Library</DisplayName>

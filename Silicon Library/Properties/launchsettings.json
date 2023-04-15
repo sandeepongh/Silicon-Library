@@ -1,10 +1,14 @@
-﻿{
-    "profiles": {
-      "Silicon Library (Package)": {
-        "commandName": "MsixPackage"
-      },
-      "Silicon Library (Unpackaged)": {
-        "commandName": "Project"
-      }
+{
+  "profiles": {
+    "Silicon Library (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Silicon Library (Unpackaged)": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
     }
+  }
 }
