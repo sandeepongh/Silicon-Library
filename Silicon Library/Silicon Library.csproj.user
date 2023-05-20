@@ -5,7 +5,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>Silicon Library (Package)</ActiveDebugProfile>
-    <_LastSelectedProfileId>C:\Users\Sandeep V\Silicon-Library\Silicon Library\Properties\PublishProfiles\win10-x64.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>C:\Users\Sandeep V\Silicon-Library\Silicon Library\Properties\PublishProfiles\win10-arm64.pubxml</_LastSelectedProfileId>
     <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>False</AppxShowAllApps>
     <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
