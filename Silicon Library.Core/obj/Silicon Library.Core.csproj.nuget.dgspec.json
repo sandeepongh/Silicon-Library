@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {}
+    "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
+    "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+        "projectUniqueName": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
         "projectName": "Silicon Library.Core",
-        "projectPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+        "projectPath": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
         "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\obj\\",
+        "outputPath": "D:\\Silicon-Library\\Silicon Library.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,7 +51,7 @@
             },
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.123, )"
+              "version": "[2.0.143, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

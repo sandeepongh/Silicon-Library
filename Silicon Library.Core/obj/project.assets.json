@@ -18,7 +18,7 @@
           }
         }
       },
-      "Dapper/2.0.123": {
+      "Dapper/2.0.143": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -2543,15 +2543,15 @@
         "lib/netcoreapp3.1/Cake.Powershell.xml"
       ]
     },
-    "Dapper/2.0.123": {
-      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+    "Dapper/2.0.143": {
+      "sha512": "Vh0U+Fins3IpS7APUlrzga3+1mswWngB5fZ0xj4w+FQR5JhJzA5uHV5rSepkahvmshNZUA0YcHtae9vFQpiVTw==",
       "type": "package",
-      "path": "dapper/2.0.123",
+      "path": "dapper/2.0.143",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.0.123.nupkg.sha512",
+        "dapper.2.0.143.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
@@ -6968,7 +6968,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Cake.Powershell >= 2.0.0",
-      "Dapper >= 2.0.123",
+      "Dapper >= 2.0.143",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -6979,11 +6979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+      "projectUniqueName": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
       "projectName": "Silicon Library.Core",
-      "projectPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+      "projectPath": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
       "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\obj\\",
+      "outputPath": "D:\\Silicon-Library\\Silicon Library.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7023,7 +7023,7 @@
           },
           "Dapper": {
             "target": "Package",
-            "version": "[2.0.123, )"
+            "version": "[2.0.143, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -7046,7 +7046,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

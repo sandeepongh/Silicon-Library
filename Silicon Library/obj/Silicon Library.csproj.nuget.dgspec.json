@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\Silicon Library.csproj": {}
+    "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
+    "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+        "projectUniqueName": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
         "projectName": "Silicon Library.Core",
-        "projectPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
+        "projectPath": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj",
         "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\obj\\",
+        "outputPath": "D:\\Silicon-Library\\Silicon Library.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,7 +51,7 @@
             },
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.123, )"
+              "version": "[2.0.143, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -74,18 +74,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\Silicon Library.csproj": {
+    "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+        "projectUniqueName": "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
         "projectName": "Silicon Library",
-        "projectPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+        "projectPath": "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
         "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\obj\\",
+        "outputPath": "D:\\Silicon-Library\\Silicon Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "net6.0-windows10.0.19041": {
             "targetAlias": "net6.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
-                "projectPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj"
+              "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
+                "projectPath": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj"
               }
             }
           }
@@ -125,7 +125,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.1, )"
             },
             "CommunityToolkit.WinUI.UI.Animations": {
               "target": "Package",
@@ -149,7 +149,7 @@
             },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
-              "version": "[1.2.230313.1, )"
+              "version": "[1.3.230602002, )"
             },
             "Microsoft.Xaml.Behaviors.WinUI.Managed": {
               "target": "Package",
@@ -157,7 +157,7 @@
             },
             "WinUIEx": {
               "target": "Package",
-              "version": "[2.1.0, )"
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
@@ -174,27 +174,27 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-arm64",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x86",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -202,15 +202,15 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[6.0.18, 6.0.18]"
             }
           ],
           "frameworkReferences": {
@@ -221,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

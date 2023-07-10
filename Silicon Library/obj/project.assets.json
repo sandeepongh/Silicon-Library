@@ -64,7 +64,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.1.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -267,7 +267,7 @@
           }
         }
       },
-      "Dapper/2.0.123": {
+      "Dapper/2.0.143": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -1727,7 +1727,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.230313.1": {
+      "Microsoft.WindowsAppSDK/1.3.230602002": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -1760,7 +1760,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -1790,7 +1791,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -4373,10 +4375,10 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "WinUIEx/2.1.0": {
+      "WinUIEx/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.2.221109.1"
+          "Microsoft.WindowsAppSDK": "1.3.230502000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
@@ -4394,7 +4396,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.123",
+          "Dapper": "2.0.143",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -4468,7 +4470,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.1.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -4671,7 +4673,7 @@
           }
         }
       },
-      "Dapper/2.0.123": {
+      "Dapper/2.0.143": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -5798,7 +5800,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.230313.1": {
+      "Microsoft.WindowsAppSDK/1.3.230602002": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -5831,7 +5833,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -5861,7 +5864,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "native": {
           "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -8423,10 +8427,10 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "WinUIEx/2.1.0": {
+      "WinUIEx/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.2.221109.1"
+          "Microsoft.WindowsAppSDK": "1.3.230502000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
@@ -8444,7 +8448,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.123",
+          "Dapper": "2.0.143",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -8518,7 +8522,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.1.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -8721,7 +8725,7 @@
           }
         }
       },
-      "Dapper/2.0.123": {
+      "Dapper/2.0.143": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -9848,7 +9852,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.230313.1": {
+      "Microsoft.WindowsAppSDK/1.3.230602002": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -9881,7 +9885,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -9911,7 +9916,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -12473,10 +12479,10 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "WinUIEx/2.1.0": {
+      "WinUIEx/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.2.221109.1"
+          "Microsoft.WindowsAppSDK": "1.3.230502000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
@@ -12494,7 +12500,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.123",
+          "Dapper": "2.0.143",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -12568,7 +12574,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.1.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -12771,7 +12777,7 @@
           }
         }
       },
-      "Dapper/2.0.123": {
+      "Dapper/2.0.143": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -13898,7 +13904,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.230313.1": {
+      "Microsoft.WindowsAppSDK/1.3.230602002": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -13931,7 +13937,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -13961,7 +13968,8 @@
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -16523,10 +16531,10 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "WinUIEx/2.1.0": {
+      "WinUIEx/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.2.221109.1"
+          "Microsoft.WindowsAppSDK": "1.3.230502000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
@@ -16544,7 +16552,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.123",
+          "Dapper": "2.0.143",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -16634,23 +16642,25 @@
         "lib/netstandard2.1/CommunityToolkit.Common.xml"
       ]
     },
-    "CommunityToolkit.Mvvm/8.1.0": {
-      "sha512": "xxOt7lu9a5kB5Fs9RfcxzVlKnhuuPe+w7AXHtmCFtS3oldrsUhEMxHfNulluXSscUUoGxZ0jh55Om12ZP6abHA==",
+    "CommunityToolkit.Mvvm/8.2.1": {
+      "sha512": "I24ofWVEdplxYjUez9/bljv/qb8r8Ccj6cvYXHexNBegLaD3iDy3QrzAAOYVMmfGWIXxlU1ZtECQNfU07+6hXQ==",
       "type": "package",
-      "path": "communitytoolkit.mvvm/8.1.0",
+      "path": "communitytoolkit.mvvm/8.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "License.md",
         "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
         "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
         "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
         "build/netstandard2.0/CommunityToolkit.Mvvm.targets",
         "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
         "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
         "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
-        "communitytoolkit.mvvm.8.1.0.nupkg.sha512",
+        "communitytoolkit.mvvm.8.2.1.nupkg.sha512",
         "communitytoolkit.mvvm.nuspec",
         "lib/net6.0/CommunityToolkit.Mvvm.dll",
         "lib/net6.0/CommunityToolkit.Mvvm.pdb",
@@ -16886,15 +16896,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Dapper/2.0.123": {
-      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+    "Dapper/2.0.143": {
+      "sha512": "Vh0U+Fins3IpS7APUlrzga3+1mswWngB5fZ0xj4w+FQR5JhJzA5uHV5rSepkahvmshNZUA0YcHtae9vFQpiVTw==",
       "type": "package",
-      "path": "dapper/2.0.123",
+      "path": "dapper/2.0.143",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.0.123.nupkg.sha512",
+        "dapper.2.0.143.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
@@ -18873,10 +18883,10 @@
         "schemas/10.0.22621.0/winrt/UapManifestSchema_v8.xsd"
       ]
     },
-    "Microsoft.WindowsAppSDK/1.2.230313.1": {
-      "sha512": "7to3P0Qui25KAWRVRw+WmmHs3s96hN18/bKOZebPuKkbHlr3p0kk/AkcdUJqsjQaGF3D8r3Rvw5r0qODGOUBjQ==",
+    "Microsoft.WindowsAppSDK/1.3.230602002": {
+      "sha512": "O0l35DvaYfFDyGPPABppmc8Y9RByN0ch/XHTJulqolNeDoR4JN9itd/k8CQTnuql+nte22564laohoelZxV3XA==",
       "type": "package",
-      "path": "microsoft.windowsappsdk/1.2.230313.1",
+      "path": "microsoft.windowsappsdk/1.3.230602002",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -18911,6 +18921,7 @@
         "build/Microsoft.Build.Msix.Common.props",
         "build/Microsoft.Build.Msix.Cpp.props",
         "build/Microsoft.Build.Msix.Cpp.targets",
+        "build/Microsoft.Build.Msix.Cs.targets",
         "build/Microsoft.Build.Msix.DesignTime.targets",
         "build/Microsoft.Build.Msix.Packaging.targets",
         "build/Microsoft.Build.Msix.Pri.targets",
@@ -18963,6 +18974,7 @@
         "build/ProjectItemsSchema.xaml",
         "build/README.md",
         "build/Rules/MsixPackageDebugPropertyPage.xaml",
+        "build/Rules/WindowsPackageTypePropertyPage.xaml",
         "build/Rules/af-ZA/MsixPackageDebugPropertyPage.xaml",
         "build/Rules/ar-SA/MsixPackageDebugPropertyPage.xaml",
         "build/Rules/az-Latn-AZ/MsixPackageDebugPropertyPage.xaml",
@@ -19069,6 +19081,7 @@
         "buildTransitive/Microsoft.Build.Msix.Common.props",
         "buildTransitive/Microsoft.Build.Msix.Cpp.props",
         "buildTransitive/Microsoft.Build.Msix.Cpp.targets",
+        "buildTransitive/Microsoft.Build.Msix.Cs.targets",
         "buildTransitive/Microsoft.Build.Msix.DesignTime.targets",
         "buildTransitive/Microsoft.Build.Msix.Packaging.targets",
         "buildTransitive/Microsoft.Build.Msix.Pri.targets",
@@ -19121,6 +19134,7 @@
         "buildTransitive/ProjectItemsSchema.xaml",
         "buildTransitive/README.md",
         "buildTransitive/Rules/MsixPackageDebugPropertyPage.xaml",
+        "buildTransitive/Rules/WindowsPackageTypePropertyPage.xaml",
         "buildTransitive/Rules/af-ZA/MsixPackageDebugPropertyPage.xaml",
         "buildTransitive/Rules/ar-SA/MsixPackageDebugPropertyPage.xaml",
         "buildTransitive/Rules/az-Latn-AZ/MsixPackageDebugPropertyPage.xaml",
@@ -19262,6 +19276,7 @@
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.Widgets.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Release.Net.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.xml",
         "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll",
@@ -19284,6 +19299,7 @@
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll",
         "lib/uap10.0.17763/Microsoft.Foundation.winmd",
         "lib/uap10.0.17763/Microsoft.Foundation.xml",
         "lib/uap10.0.17763/Microsoft.Graphics.winmd",
@@ -19338,26 +19354,26 @@
         "manifests/Microsoft.InteractiveExperiences.manifest",
         "manifests/Microsoft.WindowsAppSdk.Foundation.manifest",
         "manifests/manifests/Microsoft.WindowsAppSdk.WinUI.manifest",
-        "microsoft.windowsappsdk.1.2.230313.1.nupkg.sha512",
+        "microsoft.windowsappsdk.1.3.230602002.nupkg.sha512",
         "microsoft.windowsappsdk.nuspec",
         "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "tools/MSIX/win10-arm64/MSIX.inventory",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.2.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.2.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.2.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.2.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.3.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.3.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
         "tools/MSIX/win10-x64/MSIX.inventory",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.2.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.2.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.2.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.2.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.3.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.3.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
         "tools/MSIX/win10-x86/MSIX.inventory",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.2.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.2.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.2.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.2.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.3.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.3.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
         "tools/NOTICE.txt",
         "tools/arm64/GenXbf.dll",
         "tools/net472/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -19378,6 +19394,7 @@
         "tools/net472/System.Collections.Immutable.dll",
         "tools/net472/System.Memory.dll",
         "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
         "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
         "tools/net472/System.Text.Encodings.Web.dll",
         "tools/net472/System.Text.Json.dll",
@@ -25521,10 +25538,10 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "WinUIEx/2.1.0": {
-      "sha512": "4tiyOThWn2J4ps6mvo8tWQlx/oFLM02Sm7Jj7Awt/ODFzJT7fOYMxDfGfMJmqd8F7LyiIy5JnjmOMZdXQFYtHA==",
+    "WinUIEx/2.2.0": {
+      "sha512": "w4X+TEeGzM7w012nM5Fi/NafpV3x4SxoZs/BvN3mNve2hmCh1/GGDqM5NqbOlC9CufdhOEg83tcOjZn8nqXs5g==",
       "type": "package",
-      "path": "winuiex/2.1.0",
+      "path": "winuiex/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -25534,7 +25551,7 @@
         "lib/net6.0-windows10.0.18362/WinUIEx.pri",
         "lib/net6.0-windows10.0.18362/WinUIEx.xml",
         "logo.png",
-        "winuiex.2.1.0.nupkg.sha512",
+        "winuiex.2.2.0.nupkg.sha512",
         "winuiex.nuspec"
       ]
     },
@@ -25546,16 +25563,16 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows10.0.19041": [
-      "CommunityToolkit.Mvvm >= 8.1.0",
+      "CommunityToolkit.Mvvm >= 8.2.1",
       "CommunityToolkit.WinUI.UI.Animations >= 7.1.2",
       "CommunityToolkit.WinUI.UI.Controls >= 7.1.2",
       "CommunityToolkit.WinUI.UI.Controls.DataGrid >= 7.1.2",
       "Markdown >= 2.2.1",
       "Microsoft.Extensions.Hosting >= 7.0.1",
-      "Microsoft.WindowsAppSDK >= 1.2.230313.1",
+      "Microsoft.WindowsAppSDK >= 1.3.230602002",
       "Microsoft.Xaml.Behaviors.WinUI.Managed >= 2.0.9",
       "Silicon Library.Core >= 1.0.0",
-      "WinUIEx >= 2.1.0"
+      "WinUIEx >= 2.2.0"
     ]
   },
   "packageFolders": {
@@ -25565,11 +25582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+      "projectUniqueName": "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
       "projectName": "Silicon Library",
-      "projectPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+      "projectPath": "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
       "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library\\obj\\",
+      "outputPath": "D:\\Silicon-Library\\Silicon Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25591,8 +25608,8 @@
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
-              "projectPath": "C:\\Users\\Sandeep V\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj"
+            "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
+              "projectPath": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj"
             }
           }
         }
@@ -25609,7 +25626,7 @@
         "dependencies": {
           "CommunityToolkit.Mvvm": {
             "target": "Package",
-            "version": "[8.1.0, )"
+            "version": "[8.2.1, )"
           },
           "CommunityToolkit.WinUI.UI.Animations": {
             "target": "Package",
@@ -25633,7 +25650,7 @@
           },
           "Microsoft.WindowsAppSDK": {
             "target": "Package",
-            "version": "[1.2.230313.1, )"
+            "version": "[1.3.230602002, )"
           },
           "Microsoft.Xaml.Behaviors.WinUI.Managed": {
             "target": "Package",
@@ -25641,7 +25658,7 @@
           },
           "WinUIEx": {
             "target": "Package",
-            "version": "[2.1.0, )"
+            "version": "[2.2.0, )"
           }
         },
         "imports": [
@@ -25658,27 +25675,27 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-arm64",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x86",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -25686,15 +25703,15 @@
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-            "version": "[6.0.16, 6.0.16]"
+            "version": "[6.0.18, 6.0.18]"
           }
         ],
         "frameworkReferences": {
@@ -25705,7 +25722,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

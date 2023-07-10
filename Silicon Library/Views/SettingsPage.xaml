@@ -24,7 +24,7 @@
                                         Click="btnAddDevices_Click">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Add" Margin="0,0,5,0"/>
-                        <TextBlock Text="Add A Device Type" />
+                        <TextBlock Text="Add A New Device" />
                     </StackPanel>
                 </Button>
             </StackPanel>
