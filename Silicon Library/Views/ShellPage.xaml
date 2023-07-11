@@ -58,6 +58,11 @@
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe897;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <!--<NavigationViewItem x:Uid="Shell_Welcome" helpers:NavigationHelper.NavigateTo="Silicon_Library.ViewModels.WelcomeViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe7c3;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>-->
             </NavigationView.MenuItems>
             <NavigationView.HeaderTemplate>
                 <DataTemplate>

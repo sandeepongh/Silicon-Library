@@ -151,7 +151,7 @@
     <value>Manage your Silicon like a Library!</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
-    <value>Github</value>
+    <value>Our Project is Free and Open Source</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
     <value>https://github.com/thenoelboi/Silicon-Library</value>
@@ -161,5 +161,8 @@
   </data>
   <data name="Shell_AddDevice.Content" xml:space="preserve">
     <value>AddDevice</value>
+  </data>
+  <data name="Shell_Welcome.Content" xml:space="preserve">
+    <value>Welcome</value>
   </data>
 </root>

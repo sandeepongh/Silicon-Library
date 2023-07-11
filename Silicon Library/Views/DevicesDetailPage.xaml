@@ -98,8 +98,8 @@
                             <TextBox x:Name="txtUserId" PlaceholderText="User ID *" Width="Auto" Margin="10"/>
                             <TextBox x:Name="txtUserName" PlaceholderText="User Name *" Width="Auto" Margin="10"/>
                             <TextBox x:Name="txtDeviceId" PlaceholderText="Device ID *" Width="Auto" Margin="10"/>
-                            <DatePicker x:Name="dateReg"   Header="Device Registered On:"  Width="Auto" Margin="10"/>
-                            <DatePicker x:Name="dateDue"  Header="Device Returned On:"  Width="Auto" Margin="10" />
+                        <DatePicker x:Name="dateReg"   Header="Device Registered On:"  Width="Auto" Margin="10"/>
+                        <DatePicker x:Name="dateDue"  Header="Device Returned On:"  Width="Auto" Margin="10" />
                             <CheckBox x:Name="chkDeviceCondition" Content="Is Device Damaged?" Width="Auto" Margin="10"/>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 

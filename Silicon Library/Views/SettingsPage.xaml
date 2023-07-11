@@ -7,86 +7,95 @@
     xmlns:helpers="using:Silicon_Library.Helpers"
     xmlns:xaml="using:Microsoft.UI.Xaml"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-
-
     mc:Ignorable="d">
     <Page.Resources>
         <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
     </Page.Resources>
     <Grid>
-        <StackPanel
+        <ScrollViewer>
+            <StackPanel
             x:Name="ContentArea">
-            <!--<TextBlock x:Uid="Settings_Personalization" Style="{ThemeResource SubtitleTextBlockStyle}" />-->
-            <StackPanel x:Name="DeviceAddArea">
-                <TextBlock Text="Add Devices" Style="{ThemeResource SubtitleTextBlockStyle}" />
-                <Button x:Name="btnAddDevices" 
+                <!--<TextBlock x:Uid="Settings_Personalization" Style="{ThemeResource SubtitleTextBlockStyle}" />-->
+                <Expander HorizontalAlignment="Stretch" Header="Add a New Device" x:Name="DeviceAddArea">
+                    <StackPanel>
+                        <TextBlock Text="Add Devices" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                        <Button x:Name="btnAddDevices" 
                                         VerticalAlignment="Bottom" Margin="0,10,0,10"
                                         Click="btnAddDevices_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <SymbolIcon Symbol="Add" Margin="0,0,5,0"/>
-                        <TextBlock Text="Add A New Device" />
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Add" Margin="0,0,5,0"/>
+                                <TextBlock Text="Add A New Device" />
+                            </StackPanel>
+                        </Button>
                     </StackPanel>
-                </Button>
-            </StackPanel>
-            <StackPanel x:Name="DriverArea">
-                <TextBlock Text="Drivers" Style="{ThemeResource SubtitleTextBlockStyle}" />
-                <Button x:Name="btnDrivers" 
+                </Expander>
+                <Expander HorizontalAlignment="Stretch" Header="Install Device Drivers" x:Name="DriverArea">
+                    <StackPanel>
+                        <TextBlock Text="Drivers" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                        <Button x:Name="btnDrivers" 
                                         VerticalAlignment="Bottom" Margin="0,10,0,5"
                                         Click="btnDrivers_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <SymbolIcon Symbol="Download" Margin="0,0,5,0"/>
-                        <TextBlock Text="Install Drivers" />
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Download" Margin="0,0,5,0"/>
+                                <TextBlock Text="Install Drivers" />
+                            </StackPanel>
+                        </Button>
                     </StackPanel>
-                </Button>
-            </StackPanel>
-            <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
-                <TextBlock x:Uid="Settings_Theme" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                </Expander>
 
-                <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                    <RadioButton
+                <Expander HorizontalAlignment="Stretch" Header="Change the Theme">
+                    <StackPanel>
+                        <TextBlock x:Uid="Settings_Theme" Style="{ThemeResource SubtitleTextBlockStyle}" />
+
+                        <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                            <RadioButton
                         x:Uid="Settings_Theme_Light"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Light, Mode=OneWay}"
                         FontSize="15"
                         GroupName="AppTheme">
-                        <RadioButton.CommandParameter>
-                            <xaml:ElementTheme>Light</xaml:ElementTheme>
-                        </RadioButton.CommandParameter>
-                    </RadioButton>
-                    <RadioButton
+                                <RadioButton.CommandParameter>
+                                    <xaml:ElementTheme>Light</xaml:ElementTheme>
+                                </RadioButton.CommandParameter>
+                            </RadioButton>
+                            <RadioButton
                         x:Uid="Settings_Theme_Dark"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}"
                         FontSize="15"
                         GroupName="AppTheme">
-                        <RadioButton.CommandParameter>
-                            <xaml:ElementTheme>Dark</xaml:ElementTheme>
-                        </RadioButton.CommandParameter>
-                    </RadioButton>
-                    <RadioButton
+                                <RadioButton.CommandParameter>
+                                    <xaml:ElementTheme>Dark</xaml:ElementTheme>
+                                </RadioButton.CommandParameter>
+                            </RadioButton>
+                            <RadioButton
                         x:Uid="Settings_Theme_Default"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Default, Mode=OneWay}"
                         FontSize="15"
                         GroupName="AppTheme">
-                        <RadioButton.CommandParameter>
-                            <xaml:ElementTheme>Default</xaml:ElementTheme>
-                        </RadioButton.CommandParameter>
-                    </RadioButton>
-                </StackPanel>
-            </StackPanel>
-
-            <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
-
-            <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                <TextBlock Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" Style="{ThemeResource BodyTextBlockStyle}" />
-
-                <TextBlock
+                                <RadioButton.CommandParameter>
+                                    <xaml:ElementTheme>Default</xaml:ElementTheme>
+                                </RadioButton.CommandParameter>
+                            </RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                </Expander>
+                <Expander HorizontalAlignment="Stretch" Header="About this App">
+                    <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                        <!--<StackPanel Orientation="Horizontal">-->
+                        <Image Source="D:\Silicon-Library\Silicon Library\Assets\icon.png" Height="200" Margin="100,10,100,10" />
+                            <!--<TextBlock Text="Silicon Library" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                        </StackPanel>-->
+                        <TextBlock HorizontalAlignment="Center"
                     x:Uid="Settings_AboutDescription"
                     Margin="{StaticResource XSmallTopMargin}"
                     Style="{ThemeResource BodyTextBlockStyle}" />
-                <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" />
+                        <TextBlock HorizontalAlignment="Center" Margin="{StaticResource XSmallTopMargin}" Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" Style="{ThemeResource BodyTextBlockStyle}" />
+                        <HyperlinkButton HorizontalAlignment="Center" CornerRadius="16" x:Uid="SettingsPage_PrivacyTermsLink" Margin="4" />
+                    </StackPanel>
+                </Expander>
             </StackPanel>
-        </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
