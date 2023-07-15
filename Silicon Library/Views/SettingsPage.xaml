@@ -19,9 +19,21 @@
                 
                 <Expander HorizontalAlignment="Stretch" Header="Add a New Device" x:Name="DeviceAddArea">
                     <StackPanel>
-                        <TextBlock Text="Add Devices" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                        <TextBox x:Name="txtUserId" PlaceholderText="Enter a Device Name *" MinWidth="300" Margin="10"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Button>
+                                <FontIcon Glyph="&#xEC50;" />
+                            </Button>
+                            <TextBox x:Name="txtUserName" PlaceholderText="Locate the Test Script *" Width="Auto" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button>
+                                <FontIcon Glyph="&#xEC50;" />
+                            </Button>
+                            <TextBox x:Name="txtDeviceId" PlaceholderText="Give your Device an Icon *" Width="Auto" Margin="10"/>
+                        </StackPanel>
                         <Button x:Name="btnAddDevices" 
-                                        VerticalAlignment="Bottom" Margin="0,10,0,10"
+                                        VerticalAlignment="Bottom" Margin="10"
                                         Click="btnAddDevices_Click">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Add" Margin="0,0,5,0"/>
@@ -30,12 +42,11 @@
                         </Button>
                     </StackPanel>
                 </Expander>
-                
+
                 <Expander HorizontalAlignment="Stretch" Header="Install Device Drivers" x:Name="DriverArea">
                     <StackPanel>
-                        <TextBlock Text="Drivers" Style="{ThemeResource SubtitleTextBlockStyle}" />
                         <Button x:Name="btnDrivers" 
-                                        VerticalAlignment="Bottom" Margin="0,10,0,5"
+                                        VerticalAlignment="Bottom" Margin="10"
                                         Click="btnDrivers_Click">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Download" Margin="0,0,5,0"/>
@@ -44,54 +55,48 @@
                         </Button>
                     </StackPanel>
                 </Expander>
-
+                
                 <Expander HorizontalAlignment="Stretch" Header="Change the Theme">
                     <StackPanel>
-                        <TextBlock x:Uid="Settings_Theme" Style="{ThemeResource SubtitleTextBlockStyle}" />
-
-                        <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                            <RadioButton
+                        <RadioButton
                         x:Uid="Settings_Theme_Light"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Light, Mode=OneWay}"
                         FontSize="15"
                         GroupName="AppTheme">
-                                <RadioButton.CommandParameter>
-                                    <xaml:ElementTheme>Light</xaml:ElementTheme>
-                                </RadioButton.CommandParameter>
-                            </RadioButton>
-                            <RadioButton
+                            <RadioButton.CommandParameter>
+                                <xaml:ElementTheme>Light</xaml:ElementTheme>
+                            </RadioButton.CommandParameter>
+                        </RadioButton>
+                        <RadioButton
                         x:Uid="Settings_Theme_Dark"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}"
                         FontSize="15"
                         GroupName="AppTheme">
-                                <RadioButton.CommandParameter>
-                                    <xaml:ElementTheme>Dark</xaml:ElementTheme>
-                                </RadioButton.CommandParameter>
-                            </RadioButton>
-                            <RadioButton
+                            <RadioButton.CommandParameter>
+                                <xaml:ElementTheme>Dark</xaml:ElementTheme>
+                            </RadioButton.CommandParameter>
+                        </RadioButton>
+                        <RadioButton
                         x:Uid="Settings_Theme_Default"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Default, Mode=OneWay}"
                         FontSize="15"
                         GroupName="AppTheme">
-                                <RadioButton.CommandParameter>
-                                    <xaml:ElementTheme>Default</xaml:ElementTheme>
-                                </RadioButton.CommandParameter>
-                            </RadioButton>
-                        </StackPanel>
+                            <RadioButton.CommandParameter>
+                                <xaml:ElementTheme>Default</xaml:ElementTheme>
+                            </RadioButton.CommandParameter>
+                        </RadioButton>
                     </StackPanel>
                 </Expander>
-                
-                <Expander HorizontalAlignment="Stretch" Header="About this App">
-                    <StackPanel Margin="{StaticResource XSmallTopMargin}">
+
+                <Expander IsExpanded="True" HorizontalAlignment="Stretch" Header="About this App">
+                    <StackPanel>
                         <!--<StackPanel Orientation="Horizontal">-->
-                        <Border Height="100" CornerRadius="8">
-                            <Border.Background>
-                                <ImageBrush Stretch="Fill" ImageSource="D:\Silicon-Library\Silicon Library\Assets\icon.png"/>
-                            </Border.Background>
-                        </Border>
+                        <Button Height="100" Width="260" CornerRadius="8" Padding="-8">
+                            <Image Stretch="Fill" Source="D:\Silicon-Library\Silicon Library\Assets\icon.png"/>
+                        </Button>
                         <!--<TextBlock Text="Silicon Library" Style="{ThemeResource SubtitleTextBlockStyle}" />
                         </StackPanel>-->
                         <TextBlock HorizontalAlignment="Center"
