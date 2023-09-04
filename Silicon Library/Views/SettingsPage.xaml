@@ -95,7 +95,7 @@
                     <StackPanel>
                         <!--<StackPanel Orientation="Horizontal">-->
                         <Button Height="100" Width="260" CornerRadius="8" Padding="-8">
-                            <Image Stretch="Fill" Source="D:\Silicon-Library\Silicon Library\Assets\icon.png"/>
+                            <Image Stretch="Fill" Source="ms-appx:Assets\icon.png"/>
                         </Button>
                         <!--<TextBlock Text="Silicon Library" Style="{ThemeResource SubtitleTextBlockStyle}" />
                         </StackPanel>-->
