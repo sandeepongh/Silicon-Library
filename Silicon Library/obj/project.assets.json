@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     "net6.0-windows10.0.19041": {
-      "Cake.Powershell/2.0.0": {
+      "Cake.Powershell/3.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.SDK": "7.2.1"
+          "Microsoft.PowerShell.SDK": "7.2.10"
         },
         "compile": {
           "lib/net6.0/Cake.Powershell.dll": {
@@ -267,7 +267,7 @@
           }
         }
       },
-      "Dapper/2.0.143": {
+      "Dapper/2.0.151": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -280,7 +280,7 @@
           }
         }
       },
-      "Markdig.Signed/0.22.0": {
+      "Markdig.Signed/0.22.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Markdig.Signed.dll": {
@@ -307,7 +307,7 @@
           "lib/netstandard1.3/Markdown.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/2.18.0": {
+      "Microsoft.ApplicationInsights/2.21.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "5.0.0"
@@ -462,33 +462,13 @@
           }
         }
       },
-      "Microsoft.CSharp/4.3.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.0/Microsoft.CSharp.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CSharp.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -968,7 +948,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.ObjectPool/5.0.10": {
+      "Microsoft.Extensions.ObjectPool/5.0.17": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.Extensions.ObjectPool.dll": {
@@ -1083,10 +1063,10 @@
           "lib/netstandard1.6/_._": {}
         }
       },
-      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.1": {
+      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -1327,10 +1307,10 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.PowerShell.Commands.Diagnostics/7.2.1": {
+      "Microsoft.PowerShell.Commands.Diagnostics/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -1344,10 +1324,10 @@
           }
         }
       },
-      "Microsoft.PowerShell.Commands.Management/7.2.1": {
+      "Microsoft.PowerShell.Commands.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.Security": "7.2.1",
+          "Microsoft.PowerShell.Security": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -1366,14 +1346,17 @@
           }
         }
       },
-      "Microsoft.PowerShell.Commands.Utility/7.2.1": {
+      "Microsoft.PowerShell.Commands.Utility/7.2.10": {
         "type": "package",
         "dependencies": {
+          "Markdig.Signed": "0.22.1",
           "Microsoft.CodeAnalysis.CSharp": "4.0.1",
           "Microsoft.PowerShell.MarkdownRender": "7.2.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "NJsonSchema": "10.5.2",
+          "Namotion.Reflection": "2.0.10",
           "System.Drawing.Common": "6.0.0",
-          "System.Management.Automation": "7.2.1",
+          "System.Management.Automation": "7.2.10",
           "System.Threading.AccessControl": "6.0.0"
         },
         "compile": {
@@ -1392,10 +1375,10 @@
           }
         }
       },
-      "Microsoft.PowerShell.ConsoleHost/7.2.1": {
+      "Microsoft.PowerShell.ConsoleHost/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/Microsoft.PowerShell.ConsoleHost.dll": {
@@ -1413,7 +1396,7 @@
           }
         }
       },
-      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.1": {
+      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.10": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.EventLog": "6.0.0"
@@ -1442,7 +1425,7 @@
           "lib/netstandard2.0/Microsoft.PowerShell.MarkdownRender.dll": {}
         }
       },
-      "Microsoft.PowerShell.Native/7.2.0": {
+      "Microsoft.PowerShell.Native/7.2.1": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/linux-arm/native/libpsl-native.so": {
@@ -1515,22 +1498,23 @@
           }
         }
       },
-      "Microsoft.PowerShell.SDK/7.2.1": {
+      "Microsoft.PowerShell.SDK/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.1",
+          "Microsoft.Extensions.ObjectPool": "5.0.17",
+          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.10",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1",
-          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.1",
-          "Microsoft.PowerShell.Commands.Management": "7.2.1",
-          "Microsoft.PowerShell.Commands.Utility": "7.2.1",
-          "Microsoft.PowerShell.ConsoleHost": "7.2.1",
-          "Microsoft.PowerShell.Security": "7.2.1",
-          "Microsoft.WSMan.Management": "7.2.1",
-          "Microsoft.Windows.Compatibility": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.10",
+          "Microsoft.PowerShell.Commands.Management": "7.2.10",
+          "Microsoft.PowerShell.Commands.Utility": "7.2.10",
+          "Microsoft.PowerShell.ConsoleHost": "7.2.10",
+          "Microsoft.PowerShell.Security": "7.2.10",
+          "Microsoft.WSMan.Management": "7.2.10",
+          "Microsoft.Windows.Compatibility": "6.0.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.IO.Packaging": "6.0.0",
-          "System.Management.Automation": "7.2.1",
-          "System.Net.Http.WinHttpHandler": "6.0.0",
+          "System.Management.Automation": "7.2.10",
+          "System.Net.Http.WinHttpHandler": "6.0.1",
           "System.Private.ServiceModel": "4.9.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -1568,10 +1552,10 @@
           }
         }
       },
-      "Microsoft.PowerShell.Security/7.2.1": {
+      "Microsoft.PowerShell.Security/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -1654,7 +1638,7 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -1676,23 +1660,23 @@
           }
         }
       },
-      "Microsoft.Windows.Compatibility/6.0.0": {
+      "Microsoft.Windows.Compatibility/6.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Microsoft.Win32.SystemEvents": "6.0.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "System.CodeDom": "6.0.0",
           "System.ComponentModel.Composition": "6.0.0",
           "System.ComponentModel.Composition.Registration": "6.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.Data.Odbc": "6.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Data.Odbc": "6.0.1",
           "System.Data.OleDb": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.Diagnostics.EventLog": "6.0.0",
-          "System.Diagnostics.PerformanceCounter": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "System.Diagnostics.PerformanceCounter": "6.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.DirectoryServices.AccountManagement": "6.0.0",
-          "System.DirectoryServices.Protocols": "6.0.0",
+          "System.DirectoryServices.Protocols": "6.0.1",
           "System.Drawing.Common": "6.0.0",
           "System.IO.Packaging": "6.0.0",
           "System.IO.Ports": "6.0.0",
@@ -1700,9 +1684,9 @@
           "System.Reflection.Context": "6.0.0",
           "System.Runtime.Caching": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Security.Cryptography.Xml": "6.0.0",
+          "System.Security.Cryptography.Xml": "6.0.1",
           "System.Security.Permissions": "6.0.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -1727,7 +1711,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230602002": {
+      "Microsoft.WindowsAppSDK/1.4.230822000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -1759,9 +1743,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -1790,9 +1773,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -1813,11 +1795,11 @@
           }
         }
       },
-      "Microsoft.WSMan.Management/7.2.1": {
+      "Microsoft.WSMan.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WSMan.Runtime": "7.2.1",
-          "System.Management.Automation": "7.2.1",
+          "Microsoft.WSMan.Runtime": "7.2.10",
+          "System.Management.Automation": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -1832,7 +1814,7 @@
           }
         }
       },
-      "Microsoft.WSMan.Runtime/7.2.1": {
+      "Microsoft.WSMan.Runtime/7.2.10": {
         "type": "package",
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -1868,7 +1850,7 @@
           }
         }
       },
-      "Namotion.Reflection/2.0.3": {
+      "Namotion.Reflection/2.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0"
@@ -2355,7 +2337,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/6.0.0": {
+      "System.Configuration.ConfigurationManager/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "6.0.0",
@@ -2390,7 +2372,7 @@
           }
         }
       },
-      "System.Data.Odbc/6.0.0": {
+      "System.Data.Odbc/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Text.Encoding.CodePages": "6.0.0"
@@ -2469,7 +2451,7 @@
           }
         }
       },
-      "System.Data.SqlClient/4.8.3": {
+      "System.Data.SqlClient/4.8.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -2555,7 +2537,7 @@
           }
         }
       },
-      "System.Diagnostics.PerformanceCounter/6.0.0": {
+      "System.Diagnostics.PerformanceCounter/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.0"
@@ -2606,7 +2588,7 @@
           }
         }
       },
-      "System.DirectoryServices/6.0.0": {
+      "System.DirectoryServices/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
@@ -2660,7 +2642,7 @@
           }
         }
       },
-      "System.DirectoryServices.Protocols/6.0.0": {
+      "System.DirectoryServices.Protocols/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.DirectoryServices.Protocols.dll": {
@@ -2717,33 +2699,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "System.Dynamic.Runtime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
         }
       },
       "System.Formats.Asn1/6.0.0": {
@@ -3037,21 +2992,23 @@
           }
         }
       },
-      "System.Management.Automation/7.2.1": {
+      "System.Management.Automation/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ApplicationInsights": "2.18.0",
+          "Microsoft.ApplicationInsights": "2.21.0",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Management.Infrastructure": "2.0.0",
-          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.1",
-          "Microsoft.PowerShell.Native": "7.2.0",
+          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.10",
+          "Microsoft.PowerShell.Native": "7.2.1",
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Newtonsoft.Json": "13.0.1",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "Newtonsoft.Json": "13.0.2",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Diagnostics.DiagnosticSource": "5.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.Management": "6.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Permissions": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0"
         },
@@ -3126,7 +3083,7 @@
           }
         }
       },
-      "System.Net.Http.WinHttpHandler/6.0.0": {
+      "System.Net.Http.WinHttpHandler/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.Net.Http.WinHttpHandler.dll": {
@@ -3748,7 +3705,7 @@
           }
         }
       },
-      "System.Security.Cryptography.Pkcs/6.0.0": {
+      "System.Security.Cryptography.Pkcs/6.0.2": {
         "type": "package",
         "dependencies": {
           "System.Formats.Asn1": "6.0.0"
@@ -3858,11 +3815,11 @@
           }
         }
       },
-      "System.Security.Cryptography.Xml/6.0.0": {
+      "System.Security.Cryptography.Xml/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0"
+          "System.Security.Cryptography.Pkcs": "6.0.1"
         },
         "compile": {
           "lib/net6.0/System.Security.Cryptography.Xml.dll": {
@@ -4395,8 +4352,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.143",
+          "Cake.Powershell": "3.0.0",
+          "Dapper": "2.0.151",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -4408,10 +4365,10 @@
       }
     },
     "net6.0-windows10.0.19041/win10-arm64": {
-      "Cake.Powershell/2.0.0": {
+      "Cake.Powershell/3.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.SDK": "7.2.1"
+          "Microsoft.PowerShell.SDK": "7.2.10"
         },
         "compile": {
           "lib/net6.0/Cake.Powershell.dll": {
@@ -4673,7 +4630,7 @@
           }
         }
       },
-      "Dapper/2.0.143": {
+      "Dapper/2.0.151": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -4686,7 +4643,7 @@
           }
         }
       },
-      "Markdig.Signed/0.22.0": {
+      "Markdig.Signed/0.22.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Markdig.Signed.dll": {
@@ -4713,7 +4670,7 @@
           "lib/netstandard1.3/Markdown.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/2.18.0": {
+      "Microsoft.ApplicationInsights/2.21.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "5.0.0"
@@ -4868,33 +4825,13 @@
           }
         }
       },
-      "Microsoft.CSharp/4.3.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.0/Microsoft.CSharp.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CSharp.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -5374,7 +5311,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.ObjectPool/5.0.10": {
+      "Microsoft.Extensions.ObjectPool/5.0.17": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.Extensions.ObjectPool.dll": {
@@ -5478,10 +5415,10 @@
           "lib/netstandard1.6/_._": {}
         }
       },
-      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.1": {
+      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -5528,10 +5465,10 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.PowerShell.Commands.Diagnostics/7.2.1": {
+      "Microsoft.PowerShell.Commands.Diagnostics/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -5542,10 +5479,10 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Diagnostics.dll": {}
         }
       },
-      "Microsoft.PowerShell.Commands.Management/7.2.1": {
+      "Microsoft.PowerShell.Commands.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.Security": "7.2.1",
+          "Microsoft.PowerShell.Security": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -5557,14 +5494,17 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Management.dll": {}
         }
       },
-      "Microsoft.PowerShell.Commands.Utility/7.2.1": {
+      "Microsoft.PowerShell.Commands.Utility/7.2.10": {
         "type": "package",
         "dependencies": {
+          "Markdig.Signed": "0.22.1",
           "Microsoft.CodeAnalysis.CSharp": "4.0.1",
           "Microsoft.PowerShell.MarkdownRender": "7.2.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "NJsonSchema": "10.5.2",
+          "Namotion.Reflection": "2.0.10",
           "System.Drawing.Common": "6.0.0",
-          "System.Management.Automation": "7.2.1",
+          "System.Management.Automation": "7.2.10",
           "System.Threading.AccessControl": "6.0.0"
         },
         "compile": {
@@ -5576,10 +5516,10 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Utility.dll": {}
         }
       },
-      "Microsoft.PowerShell.ConsoleHost/7.2.1": {
+      "Microsoft.PowerShell.ConsoleHost/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/Microsoft.PowerShell.ConsoleHost.dll": {
@@ -5590,7 +5530,7 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.ConsoleHost.dll": {}
         }
       },
-      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.1": {
+      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.10": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.EventLog": "6.0.0"
@@ -5616,29 +5556,30 @@
           "lib/netstandard2.0/Microsoft.PowerShell.MarkdownRender.dll": {}
         }
       },
-      "Microsoft.PowerShell.Native/7.2.0": {
+      "Microsoft.PowerShell.Native/7.2.1": {
         "type": "package",
         "native": {
           "runtimes/win-arm64/native/PowerShell.Core.Instrumentation.dll": {},
           "runtimes/win-arm64/native/pwrshplugin.dll": {}
         }
       },
-      "Microsoft.PowerShell.SDK/7.2.1": {
+      "Microsoft.PowerShell.SDK/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.1",
+          "Microsoft.Extensions.ObjectPool": "5.0.17",
+          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.10",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1",
-          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.1",
-          "Microsoft.PowerShell.Commands.Management": "7.2.1",
-          "Microsoft.PowerShell.Commands.Utility": "7.2.1",
-          "Microsoft.PowerShell.ConsoleHost": "7.2.1",
-          "Microsoft.PowerShell.Security": "7.2.1",
-          "Microsoft.WSMan.Management": "7.2.1",
-          "Microsoft.Windows.Compatibility": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.10",
+          "Microsoft.PowerShell.Commands.Management": "7.2.10",
+          "Microsoft.PowerShell.Commands.Utility": "7.2.10",
+          "Microsoft.PowerShell.ConsoleHost": "7.2.10",
+          "Microsoft.PowerShell.Security": "7.2.10",
+          "Microsoft.WSMan.Management": "7.2.10",
+          "Microsoft.Windows.Compatibility": "6.0.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.IO.Packaging": "6.0.0",
-          "System.Management.Automation": "7.2.1",
-          "System.Net.Http.WinHttpHandler": "6.0.0",
+          "System.Management.Automation": "7.2.10",
+          "System.Net.Http.WinHttpHandler": "6.0.1",
           "System.Private.ServiceModel": "4.9.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -5669,10 +5610,10 @@
           }
         }
       },
-      "Microsoft.PowerShell.Security/7.2.1": {
+      "Microsoft.PowerShell.Security/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -5733,7 +5674,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -5749,23 +5690,23 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Windows.Compatibility/6.0.0": {
+      "Microsoft.Windows.Compatibility/6.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Microsoft.Win32.SystemEvents": "6.0.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "System.CodeDom": "6.0.0",
           "System.ComponentModel.Composition": "6.0.0",
           "System.ComponentModel.Composition.Registration": "6.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.Data.Odbc": "6.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Data.Odbc": "6.0.1",
           "System.Data.OleDb": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.Diagnostics.EventLog": "6.0.0",
-          "System.Diagnostics.PerformanceCounter": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "System.Diagnostics.PerformanceCounter": "6.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.DirectoryServices.AccountManagement": "6.0.0",
-          "System.DirectoryServices.Protocols": "6.0.0",
+          "System.DirectoryServices.Protocols": "6.0.1",
           "System.Drawing.Common": "6.0.0",
           "System.IO.Packaging": "6.0.0",
           "System.IO.Ports": "6.0.0",
@@ -5773,9 +5714,9 @@
           "System.Reflection.Context": "6.0.0",
           "System.Runtime.Caching": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Security.Cryptography.Xml": "6.0.0",
+          "System.Security.Cryptography.Xml": "6.0.1",
           "System.Security.Permissions": "6.0.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -5800,7 +5741,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230602002": {
+      "Microsoft.WindowsAppSDK/1.4.230822000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -5832,9 +5773,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -5863,9 +5803,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -5875,11 +5814,11 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "Microsoft.WSMan.Management/7.2.1": {
+      "Microsoft.WSMan.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WSMan.Runtime": "7.2.1",
-          "System.Management.Automation": "7.2.1",
+          "Microsoft.WSMan.Runtime": "7.2.10",
+          "System.Management.Automation": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -5891,7 +5830,7 @@
           "runtimes/win/lib/net6.0/Microsoft.WSMan.Management.dll": {}
         }
       },
-      "Microsoft.WSMan.Runtime/7.2.1": {
+      "Microsoft.WSMan.Runtime/7.2.10": {
         "type": "package",
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -5924,7 +5863,7 @@
           }
         }
       },
-      "Namotion.Reflection/2.0.3": {
+      "Namotion.Reflection/2.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0"
@@ -6606,7 +6545,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/6.0.0": {
+      "System.Configuration.ConfigurationManager/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "6.0.0",
@@ -6642,7 +6581,7 @@
           }
         }
       },
-      "System.Data.Odbc/6.0.0": {
+      "System.Data.Odbc/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Text.Encoding.CodePages": "6.0.0"
@@ -6681,7 +6620,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Data.SqlClient/4.8.3": {
+      "System.Data.SqlClient/4.8.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -6749,7 +6688,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Diagnostics.PerformanceCounter/6.0.0": {
+      "System.Diagnostics.PerformanceCounter/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.0"
@@ -6796,7 +6735,7 @@
           }
         }
       },
-      "System.DirectoryServices/6.0.0": {
+      "System.DirectoryServices/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
@@ -6838,7 +6777,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.DirectoryServices.Protocols/6.0.0": {
+      "System.DirectoryServices.Protocols/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.DirectoryServices.Protocols.dll": {
@@ -6871,33 +6810,6 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.Dynamic.Runtime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
         }
       },
       "System.Formats.Asn1/6.0.0": {
@@ -7165,21 +7077,23 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Management.Automation/7.2.1": {
+      "System.Management.Automation/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ApplicationInsights": "2.18.0",
+          "Microsoft.ApplicationInsights": "2.21.0",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Management.Infrastructure": "2.0.0",
-          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.1",
-          "Microsoft.PowerShell.Native": "7.2.0",
+          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.10",
+          "Microsoft.PowerShell.Native": "7.2.1",
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Newtonsoft.Json": "13.0.1",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "Newtonsoft.Json": "13.0.2",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Diagnostics.DiagnosticSource": "5.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.Management": "6.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Permissions": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0"
         },
@@ -7240,7 +7154,7 @@
           "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {}
         }
       },
-      "System.Net.Http.WinHttpHandler/6.0.0": {
+      "System.Net.Http.WinHttpHandler/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.Net.Http.WinHttpHandler.dll": {
@@ -7844,7 +7758,7 @@
           "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {}
         }
       },
-      "System.Security.Cryptography.Pkcs/6.0.0": {
+      "System.Security.Cryptography.Pkcs/6.0.2": {
         "type": "package",
         "dependencies": {
           "System.Formats.Asn1": "6.0.0"
@@ -7935,11 +7849,11 @@
           "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {}
         }
       },
-      "System.Security.Cryptography.Xml/6.0.0": {
+      "System.Security.Cryptography.Xml/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0"
+          "System.Security.Cryptography.Pkcs": "6.0.1"
         },
         "compile": {
           "lib/net6.0/System.Security.Cryptography.Xml.dll": {
@@ -8447,8 +8361,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.143",
+          "Cake.Powershell": "3.0.0",
+          "Dapper": "2.0.151",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -8460,10 +8374,10 @@
       }
     },
     "net6.0-windows10.0.19041/win10-x64": {
-      "Cake.Powershell/2.0.0": {
+      "Cake.Powershell/3.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.SDK": "7.2.1"
+          "Microsoft.PowerShell.SDK": "7.2.10"
         },
         "compile": {
           "lib/net6.0/Cake.Powershell.dll": {
@@ -8725,7 +8639,7 @@
           }
         }
       },
-      "Dapper/2.0.143": {
+      "Dapper/2.0.151": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -8738,7 +8652,7 @@
           }
         }
       },
-      "Markdig.Signed/0.22.0": {
+      "Markdig.Signed/0.22.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Markdig.Signed.dll": {
@@ -8765,7 +8679,7 @@
           "lib/netstandard1.3/Markdown.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/2.18.0": {
+      "Microsoft.ApplicationInsights/2.21.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "5.0.0"
@@ -8920,33 +8834,13 @@
           }
         }
       },
-      "Microsoft.CSharp/4.3.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.0/Microsoft.CSharp.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CSharp.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -9426,7 +9320,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.ObjectPool/5.0.10": {
+      "Microsoft.Extensions.ObjectPool/5.0.17": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.Extensions.ObjectPool.dll": {
@@ -9530,10 +9424,10 @@
           "lib/netstandard1.6/_._": {}
         }
       },
-      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.1": {
+      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -9580,10 +9474,10 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.PowerShell.Commands.Diagnostics/7.2.1": {
+      "Microsoft.PowerShell.Commands.Diagnostics/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -9594,10 +9488,10 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Diagnostics.dll": {}
         }
       },
-      "Microsoft.PowerShell.Commands.Management/7.2.1": {
+      "Microsoft.PowerShell.Commands.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.Security": "7.2.1",
+          "Microsoft.PowerShell.Security": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -9609,14 +9503,17 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Management.dll": {}
         }
       },
-      "Microsoft.PowerShell.Commands.Utility/7.2.1": {
+      "Microsoft.PowerShell.Commands.Utility/7.2.10": {
         "type": "package",
         "dependencies": {
+          "Markdig.Signed": "0.22.1",
           "Microsoft.CodeAnalysis.CSharp": "4.0.1",
           "Microsoft.PowerShell.MarkdownRender": "7.2.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "NJsonSchema": "10.5.2",
+          "Namotion.Reflection": "2.0.10",
           "System.Drawing.Common": "6.0.0",
-          "System.Management.Automation": "7.2.1",
+          "System.Management.Automation": "7.2.10",
           "System.Threading.AccessControl": "6.0.0"
         },
         "compile": {
@@ -9628,10 +9525,10 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Utility.dll": {}
         }
       },
-      "Microsoft.PowerShell.ConsoleHost/7.2.1": {
+      "Microsoft.PowerShell.ConsoleHost/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/Microsoft.PowerShell.ConsoleHost.dll": {
@@ -9642,7 +9539,7 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.ConsoleHost.dll": {}
         }
       },
-      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.1": {
+      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.10": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.EventLog": "6.0.0"
@@ -9668,29 +9565,30 @@
           "lib/netstandard2.0/Microsoft.PowerShell.MarkdownRender.dll": {}
         }
       },
-      "Microsoft.PowerShell.Native/7.2.0": {
+      "Microsoft.PowerShell.Native/7.2.1": {
         "type": "package",
         "native": {
           "runtimes/win-x64/native/PowerShell.Core.Instrumentation.dll": {},
           "runtimes/win-x64/native/pwrshplugin.dll": {}
         }
       },
-      "Microsoft.PowerShell.SDK/7.2.1": {
+      "Microsoft.PowerShell.SDK/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.1",
+          "Microsoft.Extensions.ObjectPool": "5.0.17",
+          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.10",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1",
-          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.1",
-          "Microsoft.PowerShell.Commands.Management": "7.2.1",
-          "Microsoft.PowerShell.Commands.Utility": "7.2.1",
-          "Microsoft.PowerShell.ConsoleHost": "7.2.1",
-          "Microsoft.PowerShell.Security": "7.2.1",
-          "Microsoft.WSMan.Management": "7.2.1",
-          "Microsoft.Windows.Compatibility": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.10",
+          "Microsoft.PowerShell.Commands.Management": "7.2.10",
+          "Microsoft.PowerShell.Commands.Utility": "7.2.10",
+          "Microsoft.PowerShell.ConsoleHost": "7.2.10",
+          "Microsoft.PowerShell.Security": "7.2.10",
+          "Microsoft.WSMan.Management": "7.2.10",
+          "Microsoft.Windows.Compatibility": "6.0.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.IO.Packaging": "6.0.0",
-          "System.Management.Automation": "7.2.1",
-          "System.Net.Http.WinHttpHandler": "6.0.0",
+          "System.Management.Automation": "7.2.10",
+          "System.Net.Http.WinHttpHandler": "6.0.1",
           "System.Private.ServiceModel": "4.9.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -9721,10 +9619,10 @@
           }
         }
       },
-      "Microsoft.PowerShell.Security/7.2.1": {
+      "Microsoft.PowerShell.Security/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -9785,7 +9683,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -9801,23 +9699,23 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Windows.Compatibility/6.0.0": {
+      "Microsoft.Windows.Compatibility/6.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Microsoft.Win32.SystemEvents": "6.0.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "System.CodeDom": "6.0.0",
           "System.ComponentModel.Composition": "6.0.0",
           "System.ComponentModel.Composition.Registration": "6.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.Data.Odbc": "6.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Data.Odbc": "6.0.1",
           "System.Data.OleDb": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.Diagnostics.EventLog": "6.0.0",
-          "System.Diagnostics.PerformanceCounter": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "System.Diagnostics.PerformanceCounter": "6.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.DirectoryServices.AccountManagement": "6.0.0",
-          "System.DirectoryServices.Protocols": "6.0.0",
+          "System.DirectoryServices.Protocols": "6.0.1",
           "System.Drawing.Common": "6.0.0",
           "System.IO.Packaging": "6.0.0",
           "System.IO.Ports": "6.0.0",
@@ -9825,9 +9723,9 @@
           "System.Reflection.Context": "6.0.0",
           "System.Runtime.Caching": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Security.Cryptography.Xml": "6.0.0",
+          "System.Security.Cryptography.Xml": "6.0.1",
           "System.Security.Permissions": "6.0.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -9852,7 +9750,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230602002": {
+      "Microsoft.WindowsAppSDK/1.4.230822000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -9884,9 +9782,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -9915,9 +9812,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -9927,11 +9823,11 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "Microsoft.WSMan.Management/7.2.1": {
+      "Microsoft.WSMan.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WSMan.Runtime": "7.2.1",
-          "System.Management.Automation": "7.2.1",
+          "Microsoft.WSMan.Runtime": "7.2.10",
+          "System.Management.Automation": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -9943,7 +9839,7 @@
           "runtimes/win/lib/net6.0/Microsoft.WSMan.Management.dll": {}
         }
       },
-      "Microsoft.WSMan.Runtime/7.2.1": {
+      "Microsoft.WSMan.Runtime/7.2.10": {
         "type": "package",
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -9976,7 +9872,7 @@
           }
         }
       },
-      "Namotion.Reflection/2.0.3": {
+      "Namotion.Reflection/2.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0"
@@ -10658,7 +10554,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/6.0.0": {
+      "System.Configuration.ConfigurationManager/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "6.0.0",
@@ -10694,7 +10590,7 @@
           }
         }
       },
-      "System.Data.Odbc/6.0.0": {
+      "System.Data.Odbc/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Text.Encoding.CodePages": "6.0.0"
@@ -10733,7 +10629,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Data.SqlClient/4.8.3": {
+      "System.Data.SqlClient/4.8.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -10801,7 +10697,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Diagnostics.PerformanceCounter/6.0.0": {
+      "System.Diagnostics.PerformanceCounter/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.0"
@@ -10848,7 +10744,7 @@
           }
         }
       },
-      "System.DirectoryServices/6.0.0": {
+      "System.DirectoryServices/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
@@ -10890,7 +10786,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.DirectoryServices.Protocols/6.0.0": {
+      "System.DirectoryServices.Protocols/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.DirectoryServices.Protocols.dll": {
@@ -10923,33 +10819,6 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.Dynamic.Runtime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
         }
       },
       "System.Formats.Asn1/6.0.0": {
@@ -11217,21 +11086,23 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Management.Automation/7.2.1": {
+      "System.Management.Automation/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ApplicationInsights": "2.18.0",
+          "Microsoft.ApplicationInsights": "2.21.0",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Management.Infrastructure": "2.0.0",
-          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.1",
-          "Microsoft.PowerShell.Native": "7.2.0",
+          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.10",
+          "Microsoft.PowerShell.Native": "7.2.1",
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Newtonsoft.Json": "13.0.1",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "Newtonsoft.Json": "13.0.2",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Diagnostics.DiagnosticSource": "5.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.Management": "6.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Permissions": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0"
         },
@@ -11292,7 +11163,7 @@
           "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {}
         }
       },
-      "System.Net.Http.WinHttpHandler/6.0.0": {
+      "System.Net.Http.WinHttpHandler/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.Net.Http.WinHttpHandler.dll": {
@@ -11896,7 +11767,7 @@
           "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {}
         }
       },
-      "System.Security.Cryptography.Pkcs/6.0.0": {
+      "System.Security.Cryptography.Pkcs/6.0.2": {
         "type": "package",
         "dependencies": {
           "System.Formats.Asn1": "6.0.0"
@@ -11987,11 +11858,11 @@
           "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {}
         }
       },
-      "System.Security.Cryptography.Xml/6.0.0": {
+      "System.Security.Cryptography.Xml/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0"
+          "System.Security.Cryptography.Pkcs": "6.0.1"
         },
         "compile": {
           "lib/net6.0/System.Security.Cryptography.Xml.dll": {
@@ -12499,8 +12370,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.143",
+          "Cake.Powershell": "3.0.0",
+          "Dapper": "2.0.151",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -12512,10 +12383,10 @@
       }
     },
     "net6.0-windows10.0.19041/win10-x86": {
-      "Cake.Powershell/2.0.0": {
+      "Cake.Powershell/3.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.SDK": "7.2.1"
+          "Microsoft.PowerShell.SDK": "7.2.10"
         },
         "compile": {
           "lib/net6.0/Cake.Powershell.dll": {
@@ -12777,7 +12648,7 @@
           }
         }
       },
-      "Dapper/2.0.143": {
+      "Dapper/2.0.151": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -12790,7 +12661,7 @@
           }
         }
       },
-      "Markdig.Signed/0.22.0": {
+      "Markdig.Signed/0.22.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Markdig.Signed.dll": {
@@ -12817,7 +12688,7 @@
           "lib/netstandard1.3/Markdown.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/2.18.0": {
+      "Microsoft.ApplicationInsights/2.21.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "5.0.0"
@@ -12972,33 +12843,13 @@
           }
         }
       },
-      "Microsoft.CSharp/4.3.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.0/Microsoft.CSharp.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CSharp.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -13478,7 +13329,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.ObjectPool/5.0.10": {
+      "Microsoft.Extensions.ObjectPool/5.0.17": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.Extensions.ObjectPool.dll": {
@@ -13582,10 +13433,10 @@
           "lib/netstandard1.6/_._": {}
         }
       },
-      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.1": {
+      "Microsoft.Management.Infrastructure.CimCmdlets/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -13632,10 +13483,10 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.PowerShell.Commands.Diagnostics/7.2.1": {
+      "Microsoft.PowerShell.Commands.Diagnostics/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -13646,10 +13497,10 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Diagnostics.dll": {}
         }
       },
-      "Microsoft.PowerShell.Commands.Management/7.2.1": {
+      "Microsoft.PowerShell.Commands.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.PowerShell.Security": "7.2.1",
+          "Microsoft.PowerShell.Security": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -13661,14 +13512,17 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Management.dll": {}
         }
       },
-      "Microsoft.PowerShell.Commands.Utility/7.2.1": {
+      "Microsoft.PowerShell.Commands.Utility/7.2.10": {
         "type": "package",
         "dependencies": {
+          "Markdig.Signed": "0.22.1",
           "Microsoft.CodeAnalysis.CSharp": "4.0.1",
           "Microsoft.PowerShell.MarkdownRender": "7.2.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "NJsonSchema": "10.5.2",
+          "Namotion.Reflection": "2.0.10",
           "System.Drawing.Common": "6.0.0",
-          "System.Management.Automation": "7.2.1",
+          "System.Management.Automation": "7.2.10",
           "System.Threading.AccessControl": "6.0.0"
         },
         "compile": {
@@ -13680,10 +13534,10 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Utility.dll": {}
         }
       },
-      "Microsoft.PowerShell.ConsoleHost/7.2.1": {
+      "Microsoft.PowerShell.ConsoleHost/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/Microsoft.PowerShell.ConsoleHost.dll": {
@@ -13694,7 +13548,7 @@
           "runtimes/win/lib/net6.0/Microsoft.PowerShell.ConsoleHost.dll": {}
         }
       },
-      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.1": {
+      "Microsoft.PowerShell.CoreCLR.Eventing/7.2.10": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.EventLog": "6.0.0"
@@ -13720,29 +13574,30 @@
           "lib/netstandard2.0/Microsoft.PowerShell.MarkdownRender.dll": {}
         }
       },
-      "Microsoft.PowerShell.Native/7.2.0": {
+      "Microsoft.PowerShell.Native/7.2.1": {
         "type": "package",
         "native": {
           "runtimes/win-x86/native/PowerShell.Core.Instrumentation.dll": {},
           "runtimes/win-x86/native/pwrshplugin.dll": {}
         }
       },
-      "Microsoft.PowerShell.SDK/7.2.1": {
+      "Microsoft.PowerShell.SDK/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.1",
+          "Microsoft.Extensions.ObjectPool": "5.0.17",
+          "Microsoft.Management.Infrastructure.CimCmdlets": "7.2.10",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1",
-          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.1",
-          "Microsoft.PowerShell.Commands.Management": "7.2.1",
-          "Microsoft.PowerShell.Commands.Utility": "7.2.1",
-          "Microsoft.PowerShell.ConsoleHost": "7.2.1",
-          "Microsoft.PowerShell.Security": "7.2.1",
-          "Microsoft.WSMan.Management": "7.2.1",
-          "Microsoft.Windows.Compatibility": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "Microsoft.PowerShell.Commands.Diagnostics": "7.2.10",
+          "Microsoft.PowerShell.Commands.Management": "7.2.10",
+          "Microsoft.PowerShell.Commands.Utility": "7.2.10",
+          "Microsoft.PowerShell.ConsoleHost": "7.2.10",
+          "Microsoft.PowerShell.Security": "7.2.10",
+          "Microsoft.WSMan.Management": "7.2.10",
+          "Microsoft.Windows.Compatibility": "6.0.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.IO.Packaging": "6.0.0",
-          "System.Management.Automation": "7.2.1",
-          "System.Net.Http.WinHttpHandler": "6.0.0",
+          "System.Management.Automation": "7.2.10",
+          "System.Net.Http.WinHttpHandler": "6.0.1",
           "System.Private.ServiceModel": "4.9.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -13773,10 +13628,10 @@
           }
         }
       },
-      "Microsoft.PowerShell.Security/7.2.1": {
+      "Microsoft.PowerShell.Security/7.2.10": {
         "type": "package",
         "dependencies": {
-          "System.Management.Automation": "7.2.1"
+          "System.Management.Automation": "7.2.10"
         },
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -13837,7 +13692,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -13853,23 +13708,23 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Windows.Compatibility/6.0.0": {
+      "Microsoft.Windows.Compatibility/6.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Microsoft.Win32.SystemEvents": "6.0.0",
+          "Microsoft.Win32.SystemEvents": "6.0.1",
           "System.CodeDom": "6.0.0",
           "System.ComponentModel.Composition": "6.0.0",
           "System.ComponentModel.Composition.Registration": "6.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.Data.Odbc": "6.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Data.Odbc": "6.0.1",
           "System.Data.OleDb": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
+          "System.Data.SqlClient": "4.8.5",
           "System.Diagnostics.EventLog": "6.0.0",
-          "System.Diagnostics.PerformanceCounter": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "System.Diagnostics.PerformanceCounter": "6.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.DirectoryServices.AccountManagement": "6.0.0",
-          "System.DirectoryServices.Protocols": "6.0.0",
+          "System.DirectoryServices.Protocols": "6.0.1",
           "System.Drawing.Common": "6.0.0",
           "System.IO.Packaging": "6.0.0",
           "System.IO.Ports": "6.0.0",
@@ -13877,9 +13732,9 @@
           "System.Reflection.Context": "6.0.0",
           "System.Runtime.Caching": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Security.Cryptography.Xml": "6.0.0",
+          "System.Security.Cryptography.Xml": "6.0.1",
           "System.Security.Permissions": "6.0.0",
           "System.ServiceModel.Duplex": "4.9.0",
           "System.ServiceModel.Http": "4.9.0",
@@ -13904,7 +13759,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230602002": {
+      "Microsoft.WindowsAppSDK/1.4.230822000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -13936,9 +13791,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -13967,9 +13821,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -13979,11 +13832,11 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "Microsoft.WSMan.Management/7.2.1": {
+      "Microsoft.WSMan.Management/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WSMan.Runtime": "7.2.1",
-          "System.Management.Automation": "7.2.1",
+          "Microsoft.WSMan.Runtime": "7.2.10",
+          "System.Management.Automation": "7.2.10",
           "System.ServiceProcess.ServiceController": "6.0.0"
         },
         "compile": {
@@ -13995,7 +13848,7 @@
           "runtimes/win/lib/net6.0/Microsoft.WSMan.Management.dll": {}
         }
       },
-      "Microsoft.WSMan.Runtime/7.2.1": {
+      "Microsoft.WSMan.Runtime/7.2.10": {
         "type": "package",
         "compile": {
           "ref/net6.0/System.Management.Automation.dll": {
@@ -14028,7 +13881,7 @@
           }
         }
       },
-      "Namotion.Reflection/2.0.3": {
+      "Namotion.Reflection/2.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0"
@@ -14710,7 +14563,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/6.0.0": {
+      "System.Configuration.ConfigurationManager/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "6.0.0",
@@ -14746,7 +14599,7 @@
           }
         }
       },
-      "System.Data.Odbc/6.0.0": {
+      "System.Data.Odbc/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Text.Encoding.CodePages": "6.0.0"
@@ -14785,7 +14638,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Data.SqlClient/4.8.3": {
+      "System.Data.SqlClient/4.8.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -14853,7 +14706,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Diagnostics.PerformanceCounter/6.0.0": {
+      "System.Diagnostics.PerformanceCounter/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.0"
@@ -14900,7 +14753,7 @@
           }
         }
       },
-      "System.DirectoryServices/6.0.0": {
+      "System.DirectoryServices/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
@@ -14942,7 +14795,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.DirectoryServices.Protocols/6.0.0": {
+      "System.DirectoryServices.Protocols/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.DirectoryServices.Protocols.dll": {
@@ -14975,33 +14828,6 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.Dynamic.Runtime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
         }
       },
       "System.Formats.Asn1/6.0.0": {
@@ -15269,21 +15095,23 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Management.Automation/7.2.1": {
+      "System.Management.Automation/7.2.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ApplicationInsights": "2.18.0",
+          "Microsoft.ApplicationInsights": "2.21.0",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Management.Infrastructure": "2.0.0",
-          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.1",
-          "Microsoft.PowerShell.Native": "7.2.0",
+          "Microsoft.PowerShell.CoreCLR.Eventing": "7.2.10",
+          "Microsoft.PowerShell.Native": "7.2.1",
           "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Newtonsoft.Json": "13.0.1",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
+          "Newtonsoft.Json": "13.0.2",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Diagnostics.DiagnosticSource": "5.0.1",
+          "System.DirectoryServices": "6.0.1",
           "System.Management": "6.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.2",
           "System.Security.Permissions": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0"
         },
@@ -15344,7 +15172,7 @@
           "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {}
         }
       },
-      "System.Net.Http.WinHttpHandler/6.0.0": {
+      "System.Net.Http.WinHttpHandler/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.Net.Http.WinHttpHandler.dll": {
@@ -15948,7 +15776,7 @@
           "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {}
         }
       },
-      "System.Security.Cryptography.Pkcs/6.0.0": {
+      "System.Security.Cryptography.Pkcs/6.0.2": {
         "type": "package",
         "dependencies": {
           "System.Formats.Asn1": "6.0.0"
@@ -16039,11 +15867,11 @@
           "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {}
         }
       },
-      "System.Security.Cryptography.Xml/6.0.0": {
+      "System.Security.Cryptography.Xml/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0"
+          "System.Security.Cryptography.Pkcs": "6.0.1"
         },
         "compile": {
           "lib/net6.0/System.Security.Cryptography.Xml.dll": {
@@ -16551,8 +16379,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Cake.Powershell": "2.0.0",
-          "Dapper": "2.0.143",
+          "Cake.Powershell": "3.0.0",
+          "Dapper": "2.0.151",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -16565,28 +16393,24 @@
     }
   },
   "libraries": {
-    "Cake.Powershell/2.0.0": {
-      "sha512": "65NCW9XtzleMrw89D/vCWCHh//jCctUDtdMyFo2cvLIrkkDl4Ldkpcf+ynpWpiltmS7bqIiHW8C7Q1gTTx5GbQ==",
+    "Cake.Powershell/3.0.0": {
+      "sha512": "fNKuNNDRQEJY1dRAJ5AxFKP5E56qUAt4wnDbM2h3YRO5YpsLV/giefN6TcmUssP2FzU//GJkKVpXqytJ56965A==",
       "type": "package",
-      "path": "cake.powershell/2.0.0",
+      "path": "cake.powershell/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "cake.powershell.2.0.0.nupkg.sha512",
+        "cake.powershell.3.0.0.nupkg.sha512",
         "cake.powershell.nuspec",
-        "lib/net5.0/Cake.Powershell.deps.json",
-        "lib/net5.0/Cake.Powershell.dll",
-        "lib/net5.0/Cake.Powershell.pdb",
-        "lib/net5.0/Cake.Powershell.xml",
         "lib/net6.0/Cake.Powershell.deps.json",
         "lib/net6.0/Cake.Powershell.dll",
         "lib/net6.0/Cake.Powershell.pdb",
         "lib/net6.0/Cake.Powershell.xml",
-        "lib/netcoreapp3.1/Cake.Powershell.deps.json",
-        "lib/netcoreapp3.1/Cake.Powershell.dll",
-        "lib/netcoreapp3.1/Cake.Powershell.pdb",
-        "lib/netcoreapp3.1/Cake.Powershell.xml"
+        "lib/net7.0/Cake.Powershell.deps.json",
+        "lib/net7.0/Cake.Powershell.dll",
+        "lib/net7.0/Cake.Powershell.pdb",
+        "lib/net7.0/Cake.Powershell.xml"
       ]
     },
     "ColorCode.Core/2.0.13": {
@@ -16896,15 +16720,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Dapper/2.0.143": {
-      "sha512": "Vh0U+Fins3IpS7APUlrzga3+1mswWngB5fZ0xj4w+FQR5JhJzA5uHV5rSepkahvmshNZUA0YcHtae9vFQpiVTw==",
+    "Dapper/2.0.151": {
+      "sha512": "mMcZgx1lim0/i1Ozu+lgnBM4GwNIHpCuxV6BV2ovsEfZAXRAq4jb6RIhxGDcVjtmXMLPpdp85jHPdDjBMMwejw==",
       "type": "package",
-      "path": "dapper/2.0.143",
+      "path": "dapper/2.0.151",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.0.143.nupkg.sha512",
+        "dapper.2.0.151.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
@@ -16914,10 +16738,10 @@
         "lib/netstandard2.0/Dapper.xml"
       ]
     },
-    "Markdig.Signed/0.22.0": {
-      "sha512": "7x3FqS3wk8DXyQLuflD47tBs6+ly6k4VtoDCzlDWfy7XHVsBIi7eGYEM15sPAcwSCQjOksNWE8U5r2v0Sk5FzQ==",
+    "Markdig.Signed/0.22.1": {
+      "sha512": "gD07OrhRX4R5wrEXfhdvgNulTA9KXi6kn+dIPSRcw2pvpZGaGNwjmoJqXPMjDJ+mreM/wM8pK3J67KcQiWmgCw==",
       "type": "package",
-      "path": "markdig.signed/0.22.0",
+      "path": "markdig.signed/0.22.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -16931,7 +16755,8 @@
         "lib/netstandard2.0/Markdig.Signed.xml",
         "lib/netstandard2.1/Markdig.Signed.dll",
         "lib/netstandard2.1/Markdig.Signed.xml",
-        "markdig.signed.0.22.0.nupkg.sha512",
+        "markdig.png",
+        "markdig.signed.0.22.1.nupkg.sha512",
         "markdig.signed.nuspec"
       ]
     },
@@ -16948,10 +16773,10 @@
         "markdown.nuspec"
       ]
     },
-    "Microsoft.ApplicationInsights/2.18.0": {
-      "sha512": "milJB3VOCoC4EWmpE/Co9cOJ7SV6Ji6VqV4Rf5UlqL9QCg+rAX1y+3Y+j1Gu/j4IExYiPq7SEKqkP2BFnEu6Vw==",
+    "Microsoft.ApplicationInsights/2.21.0": {
+      "sha512": "btZEDWAFNo9CoYliMCriSMTX3ruRGZTtYw4mo2XyyfLlowFicYVM2Xszi5evDG95QRYV7MbbH3D2RqVwfZlJHw==",
       "type": "package",
-      "path": "microsoft.applicationinsights/2.18.0",
+      "path": "microsoft.applicationinsights/2.21.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -16965,7 +16790,7 @@
         "lib/netstandard2.0/Microsoft.ApplicationInsights.dll",
         "lib/netstandard2.0/Microsoft.ApplicationInsights.pdb",
         "lib/netstandard2.0/Microsoft.ApplicationInsights.xml",
-        "microsoft.applicationinsights.2.18.0.nupkg.sha512",
+        "microsoft.applicationinsights.2.21.0.nupkg.sha512",
         "microsoft.applicationinsights.nuspec"
       ]
     },
@@ -17191,21 +17016,25 @@
         "microsoft.codeanalysis.csharp.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.3.0": {
-      "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.3.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net45/_._",
         "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
         "lib/win8/_._",
         "lib/wp80/_._",
         "lib/wpa81/_._",
@@ -17213,7 +17042,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.3.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -17229,6 +17058,7 @@
         "ref/netcore50/ru/Microsoft.CSharp.xml",
         "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
         "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
         "ref/netstandard1.0/Microsoft.CSharp.dll",
         "ref/netstandard1.0/Microsoft.CSharp.xml",
         "ref/netstandard1.0/de/Microsoft.CSharp.xml",
@@ -17240,14 +17070,19 @@
         "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
         "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
         "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
         "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
         "ref/win8/_._",
         "ref/wp80/_._",
         "ref/wpa81/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._"
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
@@ -17903,10 +17738,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.ObjectPool/5.0.10": {
-      "sha512": "pp9tbGqIhdEXL6Q1yJl+zevAJSq4BsxqhS1GXzBvEsEz9DDNu9GLNzgUy2xyFc4YjB4m4Ff2YEWTnvQvVYdkvQ==",
+    "Microsoft.Extensions.ObjectPool/5.0.17": {
+      "sha512": "EkIghF7cRBcogXKrfhopcCRjMs6b19THqSvACV5Oppp0nDA8oNyTLpAsfBQJ1hLgOjHfc5eNKFaFocKdg9nmnA==",
       "type": "package",
-      "path": "microsoft.extensions.objectpool/5.0.10",
+      "path": "microsoft.extensions.objectpool/5.0.17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -17918,7 +17753,7 @@
         "lib/net5.0/Microsoft.Extensions.ObjectPool.xml",
         "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
         "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml",
-        "microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
+        "microsoft.extensions.objectpool.5.0.17.nupkg.sha512",
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
@@ -18051,16 +17886,19 @@
         "ref/netstandard1.6/Microsoft.Management.Infrastructure.dll"
       ]
     },
-    "Microsoft.Management.Infrastructure.CimCmdlets/7.2.1": {
-      "sha512": "xe1x237SCyrjpmW1mP1T69/OOc/gtU66P8wVC+b4/u7Hz7fIO6B8P5yVQQfb79rAe1GocruIpQlX4KXTFQf09w==",
+    "Microsoft.Management.Infrastructure.CimCmdlets/7.2.10": {
+      "sha512": "EJ62fLIHbZHTJY7WLmnuqtImPNAVZn5NN5EcqnRdUcLve1ezZH8wv1e/Dh08nGAZKlnt9a6PKm7Lo2/P9g1u/w==",
       "type": "package",
-      "path": "microsoft.management.infrastructure.cimcmdlets/7.2.1",
+      "path": "microsoft.management.infrastructure.cimcmdlets/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.management.infrastructure.cimcmdlets.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.management.infrastructure.cimcmdlets.7.2.10.nupkg.sha512",
         "microsoft.management.infrastructure.cimcmdlets.nuspec",
+        "ref/net6.0/Microsoft.Management.Infrastructure.CimCmdlets.xml",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/win/lib/net6.0/Microsoft.Management.Infrastructure.CimCmdlets.dll"
@@ -18201,46 +18039,54 @@
         "runtime.json"
       ]
     },
-    "Microsoft.PowerShell.Commands.Diagnostics/7.2.1": {
-      "sha512": "Bgw4Egv7cnYUTWAy6koxg+0+/8K6rqUdlAiAxuJby9FeDPZQFfqCHQqlyP9JDa6lvbtmeBx1btFDx6Kh8bxdwQ==",
+    "Microsoft.PowerShell.Commands.Diagnostics/7.2.10": {
+      "sha512": "eOuEibWgyHsXI31+hCdm79b+MX1GOF0RubgAtWl06R40sNKps58FAf0az00VFguo6fFdSf3ZqIeu4oAlP/ENxQ==",
       "type": "package",
-      "path": "microsoft.powershell.commands.diagnostics/7.2.1",
+      "path": "microsoft.powershell.commands.diagnostics/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.powershell.commands.diagnostics.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.powershell.commands.diagnostics.7.2.10.nupkg.sha512",
         "microsoft.powershell.commands.diagnostics.nuspec",
+        "ref/net6.0/Microsoft.PowerShell.Commands.Diagnostics.xml",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Diagnostics.dll"
       ]
     },
-    "Microsoft.PowerShell.Commands.Management/7.2.1": {
-      "sha512": "YAMrGDF2QTg6Gwz07+m1+BnmcYsPyywfY4J8nOpImfXZLLNhD7zQQP0orNHu9WPPV3/+E33qUyPj5J3ugCMk6A==",
+    "Microsoft.PowerShell.Commands.Management/7.2.10": {
+      "sha512": "1Ay8y54M3fG87g9v0hVkGzTpMOX7lZXJzzw6T3IKDYISiV7Mqjy1aiSeEbEYb1jD4hgDEZSXHlpiT3KFW266kA==",
       "type": "package",
-      "path": "microsoft.powershell.commands.management/7.2.1",
+      "path": "microsoft.powershell.commands.management/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.powershell.commands.management.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.powershell.commands.management.7.2.10.nupkg.sha512",
         "microsoft.powershell.commands.management.nuspec",
+        "ref/net6.0/Microsoft.PowerShell.Commands.Management.xml",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/unix/lib/net6.0/Microsoft.PowerShell.Commands.Management.dll",
         "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Management.dll"
       ]
     },
-    "Microsoft.PowerShell.Commands.Utility/7.2.1": {
-      "sha512": "PU15IxUJd7nSacTstlxqJoEeGlI+BH6cUKTppkkIIxEj7EfwC5nD1qTL41xye63BFeZmOFeqAhMI6LtJUd875g==",
+    "Microsoft.PowerShell.Commands.Utility/7.2.10": {
+      "sha512": "4vXF/xV0zDrSkD1AdhUD7JUUHfu29T3zbchLnax36KXLFemiRHQJTqTX2fuiD9MwIeSbBLbH7/fz3mOh4w6SDQ==",
       "type": "package",
-      "path": "microsoft.powershell.commands.utility/7.2.1",
+      "path": "microsoft.powershell.commands.utility/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.powershell.commands.utility.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.powershell.commands.utility.7.2.10.nupkg.sha512",
         "microsoft.powershell.commands.utility.nuspec",
         "ref/net6.0/Microsoft.PowerShell.Commands.Utility.dll",
         "ref/net6.0/Microsoft.PowerShell.Commands.Utility.xml",
@@ -18248,15 +18094,17 @@
         "runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Utility.dll"
       ]
     },
-    "Microsoft.PowerShell.ConsoleHost/7.2.1": {
-      "sha512": "uAPSsTmkOa7na1+OAPF87yBRwD1Ka/qXThoyrlvP9ihzMWfHM52k3MuKVEGi04VP3Wdi7U4Rzkr3svxDDmkHgA==",
+    "Microsoft.PowerShell.ConsoleHost/7.2.10": {
+      "sha512": "OI5Jm/MQkUi7p5lWDYaDehMkrS4FmtLUj4j/y8vW/pi9WgzRT7ShAJBB+oZoQqAQlznFIx5pR4D4BIkDHwGLMQ==",
       "type": "package",
-      "path": "microsoft.powershell.consolehost/7.2.1",
+      "path": "microsoft.powershell.consolehost/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.powershell.consolehost.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.powershell.consolehost.7.2.10.nupkg.sha512",
         "microsoft.powershell.consolehost.nuspec",
         "ref/net6.0/Microsoft.PowerShell.ConsoleHost.dll",
         "ref/net6.0/Microsoft.PowerShell.ConsoleHost.xml",
@@ -18264,16 +18112,19 @@
         "runtimes/win/lib/net6.0/Microsoft.PowerShell.ConsoleHost.dll"
       ]
     },
-    "Microsoft.PowerShell.CoreCLR.Eventing/7.2.1": {
-      "sha512": "fUz7InjavqKtslkQN828nWbZLnmmJRL9rn4b3e/XXdx0BcN+65x/pSgMnehwDVGIoqUPUMXN54eDo4HRVcLA5g==",
+    "Microsoft.PowerShell.CoreCLR.Eventing/7.2.10": {
+      "sha512": "OHZfGK+udRe2mRVAH+4+zfVcZfQNb0cdzKmKNK+ohWRJzmkZxfWA++pnfXz+O02XOILYie1jBVlI6oz8KWeNaA==",
       "type": "package",
-      "path": "microsoft.powershell.coreclr.eventing/7.2.1",
+      "path": "microsoft.powershell.coreclr.eventing/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.powershell.coreclr.eventing.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.powershell.coreclr.eventing.7.2.10.nupkg.sha512",
         "microsoft.powershell.coreclr.eventing.nuspec",
+        "ref/net6.0/Microsoft.PowerShell.CoreCLR.Eventing.xml",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/win/lib/net6.0/Microsoft.PowerShell.CoreCLR.Eventing.dll"
@@ -18291,16 +18142,16 @@
         "microsoft.powershell.markdownrender.nuspec"
       ]
     },
-    "Microsoft.PowerShell.Native/7.2.0": {
-      "sha512": "TauOu3bYr4DRh9HpH3+fgaL+y2GY47KLsgU6qX1NDLqHshdEaCCjiF0N5sDEgCEhSb38FwWhpdFTIQvoOcYCXQ==",
+    "Microsoft.PowerShell.Native/7.2.1": {
+      "sha512": "Ce7sccSKHemYA/p/ADD3twqp2RgvtPV6ch+hY6n50tWkGmytfSccYgnhtG30/1SaU0ktCLvg0/NSE6XB10XFqA==",
       "type": "package",
-      "path": "microsoft.powershell.native/7.2.0",
+      "path": "microsoft.powershell.native/7.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PSRP_version.txt",
         "Powershell_black_64.png",
-        "microsoft.powershell.native.7.2.0.nupkg.sha512",
+        "microsoft.powershell.native.7.2.1.nupkg.sha512",
         "microsoft.powershell.native.nuspec",
         "runtimes/linux-arm/native/libpsl-native.so",
         "runtimes/linux-arm64/native/libpsl-native.so",
@@ -18321,14 +18172,16 @@
         "runtimes/win-x86/native/pwrshplugin.dll"
       ]
     },
-    "Microsoft.PowerShell.SDK/7.2.1": {
-      "sha512": "UufIcywqI/22p0oqC5qg+yDoW39U2JAQyaHxy2Tr/h0hdWuFimtmhxp/FDXTxszgOdobtjcrCkSzqcoNmu/vQQ==",
+    "Microsoft.PowerShell.SDK/7.2.10": {
+      "sha512": "hudpvdCzrXOcLcJwVdNmLE7ISaei3P8CvzeOcXSwoXYVDGDumLqU3tllylnWiws95iQtwWSbtXVyVRmKnCRlTQ==",
       "type": "package",
-      "path": "microsoft.powershell.sdk/7.2.1",
+      "path": "microsoft.powershell.sdk/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
         "contentFiles/any/any/ref/Microsoft.CSharp.dll",
         "contentFiles/any/any/ref/Microsoft.VisualBasic.Core.dll",
         "contentFiles/any/any/ref/Microsoft.VisualBasic.dll",
@@ -18505,7 +18358,7 @@
         "contentFiles/any/any/runtimes/win/lib/net6.0/Modules/Microsoft.WSMan.Management/WSMan.format.ps1xml",
         "contentFiles/any/any/runtimes/win/lib/net6.0/Modules/PSDiagnostics/PSDiagnostics.psd1",
         "contentFiles/any/any/runtimes/win/lib/net6.0/Modules/PSDiagnostics/PSDiagnostics.psm1",
-        "microsoft.powershell.sdk.7.2.1.nupkg.sha512",
+        "microsoft.powershell.sdk.7.2.10.nupkg.sha512",
         "microsoft.powershell.sdk.nuspec",
         "ref/net6.0/Microsoft.PowerShell.Commands.Utility.dll",
         "ref/net6.0/Microsoft.PowerShell.Commands.Utility.xml",
@@ -18517,16 +18370,19 @@
         "runtimes/win/lib/net6.0/Microsoft.PowerShell.SDK.dll"
       ]
     },
-    "Microsoft.PowerShell.Security/7.2.1": {
-      "sha512": "GV3RuuOmXHAaEjeBcyixdzUIAQvHW6xgoWwafzTe97DbhI+N1sg4fa/FQ9pd8lqG+kkWxGwTy1VgudXX6rhUkg==",
+    "Microsoft.PowerShell.Security/7.2.10": {
+      "sha512": "Y2v6fuEdNiTBSTvaLIyggMrA2CFITm3SVrjsbKCbHHuTW/dd8c+Kmyess1m+wfLoJMlL69/2bc1xSPye0jf4Sg==",
       "type": "package",
-      "path": "microsoft.powershell.security/7.2.1",
+      "path": "microsoft.powershell.security/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.powershell.security.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.powershell.security.7.2.10.nupkg.sha512",
         "microsoft.powershell.security.nuspec",
+        "ref/net6.0/Microsoft.PowerShell.Security.xml",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/unix/lib/net6.0/Microsoft.PowerShell.Security.dll",
@@ -18647,10 +18503,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Win32.SystemEvents/6.0.0": {
-      "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+    "Microsoft.Win32.SystemEvents/6.0.1": {
+      "sha512": "AlsaDWyQHLFB7O2nfbny0x0oziB34WWzGnf/4Q5R8KjXhu8MnCsxE2MIePr192lIIaxarfTLI9bQg+qtmM+9ag==",
       "type": "package",
-      "path": "microsoft.win32.systemevents/6.0.0",
+      "path": "microsoft.win32.systemevents/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -18667,7 +18523,7 @@
         "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.6.0.1.nupkg.sha512",
         "microsoft.win32.systemevents.nuspec",
         "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
@@ -18676,10 +18532,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Windows.Compatibility/6.0.0": {
-      "sha512": "9esuK5JqnjkDgO9/AHesyJSG0aKwpfLVzTw6nIGYhqE91VLxZyv3HKulNoPVy/NOuyAaf1kE4FKtdZDzdd/SLw==",
+    "Microsoft.Windows.Compatibility/6.0.3": {
+      "sha512": "rqwZJpywoKZML+j6EgR9Pug2ndEbrb6ksH3kSFOYbuauSAQ7hrlfmNdtXM/S+soGw8EmIo7iYap1S8m2r9D59w==",
       "type": "package",
-      "path": "microsoft.windows.compatibility/6.0.0",
+      "path": "microsoft.windows.compatibility/6.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -18688,7 +18544,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/netcoreapp2.0/Microsoft.Windows.Compatibility.targets",
         "buildTransitive/netcoreapp3.1/_._",
-        "microsoft.windows.compatibility.6.0.0.nupkg.sha512",
+        "microsoft.windows.compatibility.6.0.3.nupkg.sha512",
         "microsoft.windows.compatibility.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -18884,10 +18740,10 @@
         "schemas/10.0.22621.0/winrt/UapManifestSchema_v8.xsd"
       ]
     },
-    "Microsoft.WindowsAppSDK/1.3.230602002": {
-      "sha512": "O0l35DvaYfFDyGPPABppmc8Y9RByN0ch/XHTJulqolNeDoR4JN9itd/k8CQTnuql+nte22564laohoelZxV3XA==",
+    "Microsoft.WindowsAppSDK/1.4.230822000": {
+      "sha512": "QeR+4u7j0z9RWhVzTbr/5izWmq7k3GkjxCFbXNuYtIHYDm2YcdIH5Kvn+9tpMLweFzDZO7YVzVvvyQGivUtNcw==",
       "type": "package",
-      "path": "microsoft.windowsappsdk/1.3.230602002",
+      "path": "microsoft.windowsappsdk/1.4.230822000",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -18961,7 +18817,6 @@
         "build/Microsoft.WindowsAppSDK.UndockedRegFreeWinRT.CS.targets",
         "build/Microsoft.WindowsAppSDK.UndockedRegFreeWinRTCommon.targets",
         "build/Microsoft.WindowsAppSDK.Widgets.targets",
-        "build/Microsoft.WindowsAppSDK.WinUI.Build.props",
         "build/Microsoft.WindowsAppSDK.WinUI.props",
         "build/Microsoft.WindowsAppSDK.WinUI.targets",
         "build/Microsoft.WindowsAppSDK.props",
@@ -19121,7 +18976,6 @@
         "buildTransitive/Microsoft.WindowsAppSDK.UndockedRegFreeWinRT.CS.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.UndockedRegFreeWinRTCommon.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.Widgets.targets",
-        "buildTransitive/Microsoft.WindowsAppSDK.WinUI.Build.props",
         "buildTransitive/Microsoft.WindowsAppSDK.WinUI.props",
         "buildTransitive/Microsoft.WindowsAppSDK.WinUI.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.props",
@@ -19222,7 +19076,9 @@
         "include/MddBootstrapAutoInitializer.cpp",
         "include/MddBootstrapAutoInitializer.cs",
         "include/Microsoft.UI.Composition.Interop.h",
+        "include/Microsoft.UI.Dispatching.Interop.h",
         "include/Microsoft.UI.Input.InputCursor.Interop.h",
+        "include/Microsoft.UI.Input.InputPreTranslateSource.Interop.h",
         "include/Microsoft.UI.Interop.h",
         "include/Microsoft.Windows.ApplicationModel.Resources.idl",
         "include/MsixDynamicDependency.h",
@@ -19239,8 +19095,6 @@
         "include/dwrite_2.h",
         "include/dwrite_3.h",
         "include/dwrite_core.h",
-        "include/microsoft.ui.xaml.hosting.desktopwindowxamlsource.h",
-        "include/microsoft.ui.xaml.hosting.desktopwindowxamlsource.idl",
         "include/microsoft.ui.xaml.hosting.referencetracker.h",
         "include/microsoft.ui.xaml.hosting.referencetracker.idl",
         "include/microsoft.ui.xaml.media.dxinterop.h",
@@ -19250,11 +19104,15 @@
         "include/wil_msixdynamicdependency.h",
         "include/winrt/Microsoft.UI.Composition.Interop.h",
         "include/winrt/Microsoft.UI.Input.InputCursor.Interop.h",
+        "include/winrt/Microsoft.UI.Input.InputPreTranslateSource.Interop.h",
         "include/winrt/Microsoft.UI.Interop.h",
         "include/winrtdirect3d11.h",
         "include/winrtdirectxcommon.h",
         "include/xamlom.winui.h",
         "include/xamlom.winui.idl",
+        "lib/native/win10-arm64/Microsoft.UI.Dispatching.lib",
+        "lib/native/win10-x64/Microsoft.UI.Dispatching.lib",
+        "lib/native/win10-x86/Microsoft.UI.Dispatching.lib",
         "lib/net6.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.xml",
         "lib/net6.0-windows10.0.17763.0/Microsoft.WinUI.dll",
@@ -19275,9 +19133,8 @@
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.xml",
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Projection.dll",
-        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.Widgets.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.Widgets.Providers.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
-        "lib/net6.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Release.Net.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.xml",
         "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll",
@@ -19298,9 +19155,8 @@
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.xml",
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll",
-        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
-        "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll",
         "lib/uap10.0.17763/Microsoft.Foundation.winmd",
         "lib/uap10.0.17763/Microsoft.Foundation.xml",
         "lib/uap10.0.17763/Microsoft.Graphics.winmd",
@@ -19355,26 +19211,26 @@
         "manifests/Microsoft.InteractiveExperiences.manifest",
         "manifests/Microsoft.WindowsAppSdk.Foundation.manifest",
         "manifests/manifests/Microsoft.WindowsAppSdk.WinUI.manifest",
-        "microsoft.windowsappsdk.1.3.230602002.nupkg.sha512",
+        "microsoft.windowsappsdk.1.4.230822000.nupkg.sha512",
         "microsoft.windowsappsdk.nuspec",
         "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "tools/MSIX/win10-arm64/MSIX.inventory",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.3.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.3.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.4.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.4.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.4.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.4.msix",
         "tools/MSIX/win10-x64/MSIX.inventory",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.3.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.3.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.4.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.4.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.4.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.4.msix",
         "tools/MSIX/win10-x86/MSIX.inventory",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.3.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.3.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.4.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.4.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.4.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.4.msix",
         "tools/NOTICE.txt",
         "tools/arm64/GenXbf.dll",
         "tools/net472/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -19531,31 +19387,37 @@
         "tools/x86/GenXbf.dll"
       ]
     },
-    "Microsoft.WSMan.Management/7.2.1": {
-      "sha512": "vMOJMof4eLql180G4PmTurN8h8+VmPaf1l/Tqq+GI7HYyNv140iY3/Z18MiZA4dRG14qghLNo5JxtTolY7b4og==",
+    "Microsoft.WSMan.Management/7.2.10": {
+      "sha512": "RANXWTFKwL511tsOfeOpNRWuj9wM5ou7UmDaWVyg5szhe7m3Js/0bSE5/hdFAqk90Ho765vvUmAiP7aIjmNn+Q==",
       "type": "package",
-      "path": "microsoft.wsman.management/7.2.1",
+      "path": "microsoft.wsman.management/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.wsman.management.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.wsman.management.7.2.10.nupkg.sha512",
         "microsoft.wsman.management.nuspec",
+        "ref/net6.0/Microsoft.WSMan.Management.xml",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/win/lib/net6.0/Microsoft.WSMan.Management.dll"
       ]
     },
-    "Microsoft.WSMan.Runtime/7.2.1": {
-      "sha512": "v14vzUXIg7opXoQI8Eb82dvsRwBNylZ44lvyXOBSRCiVfvMhyTqE8bpPWbwwmQ5JZRnG/dP5/aOYuu9l163fyQ==",
+    "Microsoft.WSMan.Runtime/7.2.10": {
+      "sha512": "zaBWghyQDG/yX/gLrxZ0+J9pN1Lw95Kezwcmp6/2hn6lodQCfSra+dp4G6/g6oJAfie76ySPLVI5ZXyuUMS1Mg==",
       "type": "package",
-      "path": "microsoft.wsman.runtime/7.2.1",
+      "path": "microsoft.wsman.runtime/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
-        "microsoft.wsman.runtime.7.2.1.nupkg.sha512",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "microsoft.wsman.runtime.7.2.10.nupkg.sha512",
         "microsoft.wsman.runtime.nuspec",
+        "ref/net6.0/Microsoft.WSMan.Runtime.xml",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/win/lib/net6.0/Microsoft.WSMan.Runtime.dll"
@@ -19622,10 +19484,10 @@
         "src/BehaviorsSDKManaged/Microsoft.Xaml.Interactivity.WinUI/VisualStateUtilities.cs"
       ]
     },
-    "Namotion.Reflection/2.0.3": {
-      "sha512": "tZCe/UrSBAMW8A4TjD/SlpRHaWjnHlSWdyRuOXhf3yrE0OX+4fXg0uzj7mwFDclXznfCGRAZbP+akPt4G/mclw==",
+    "Namotion.Reflection/2.0.10": {
+      "sha512": "KHndyscosup/AnzMQLzW0g6+z0h2NCmTyW9hnEL/T/ZkiUIQWBA1RadYgUT+dXuMORmQI/BXm+DXYySWwq8h0Q==",
       "type": "package",
-      "path": "namotion.reflection/2.0.3",
+      "path": "namotion.reflection/2.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -19637,7 +19499,7 @@
         "lib/netstandard1.0/Namotion.Reflection.xml",
         "lib/netstandard2.0/Namotion.Reflection.dll",
         "lib/netstandard2.0/Namotion.Reflection.xml",
-        "namotion.reflection.2.0.3.nupkg.sha512",
+        "namotion.reflection.2.0.10.nupkg.sha512",
         "namotion.reflection.nuspec"
       ]
     },
@@ -21021,10 +20883,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Configuration.ConfigurationManager/6.0.0": {
-      "sha512": "7T+m0kDSlIPTHIkPMIu6m6tV6qsMqJpvQWW2jIc2qi7sn40qxFo0q+7mEQAhMPXZHMKnWrnv47ntGlM/ejvw3g==",
+    "System.Configuration.ConfigurationManager/6.0.1": {
+      "sha512": "jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/6.0.0",
+      "path": "system.configuration.configurationmanager/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21041,7 +20903,7 @@
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
         "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll",
         "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.6.0.1.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -21084,10 +20946,10 @@
         "system.console.nuspec"
       ]
     },
-    "System.Data.Odbc/6.0.0": {
-      "sha512": "pnZjwe0Qwr1Rnp7NExd5zz4YwXJrYuAbWNKjEQpTzCEg6f/L5DYJS7w3hG3vgSj1t/r79UL390YzXIklf1VuQQ==",
+    "System.Data.Odbc/6.0.1": {
+      "sha512": "4vl7z0b8gcwc2NotcpEkqaLVQAw/wo46zV1uVSoIx2UfJdqlxWKD3ViUicCNJGo41th4kaGcY9kyVe2q9EuB4w==",
       "type": "package",
-      "path": "system.data.odbc/6.0.0",
+      "path": "system.data.odbc/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21130,7 +20992,7 @@
         "runtimes/win/lib/net6.0/System.Data.Odbc.xml",
         "runtimes/win/lib/netcoreapp3.1/System.Data.Odbc.dll",
         "runtimes/win/lib/netcoreapp3.1/System.Data.Odbc.xml",
-        "system.data.odbc.6.0.0.nupkg.sha512",
+        "system.data.odbc.6.0.1.nupkg.sha512",
         "system.data.odbc.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -21164,10 +21026,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Data.SqlClient/4.8.3": {
-      "sha512": "yERfVLXAY0QbylAgaGLByYN0hFxX28aeEQ0hUgJO+Ntn1AfmWl5HHUoYJA0Yl9HhIUUJHVaS/Sw/RLZr5aaC+A==",
+    "System.Data.SqlClient/4.8.5": {
+      "sha512": "fRqxut4lrndPHrXD+ht1XRmCL3obuKldm4XjCRYS9p5f7FSR7shBxAwTkDrpFMsHC9BhNgjjmUtiIjvehn5zkg==",
       "type": "package",
-      "path": "system.data.sqlclient/4.8.3",
+      "path": "system.data.sqlclient/4.8.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21244,7 +21106,7 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.8.3.nupkg.sha512",
+        "system.data.sqlclient.4.8.5.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -21378,10 +21240,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Diagnostics.PerformanceCounter/6.0.0": {
-      "sha512": "gbeE5tNp/oB7O8kTTLh3wPPJCxpNOphXPTWVs1BsYuFOYapFijWuh0LYw1qnDo4gwDUYPXOmpTIhvtxisGsYOQ==",
+    "System.Diagnostics.PerformanceCounter/6.0.1": {
+      "sha512": "dDl7Gx3bmSrM2k2ZIm+ucEJnLloZRyvfQF1DvfvATcGF3jtaUBiPvChma+6ZcZzxWMirN3kCywkW7PILphXyMQ==",
       "type": "package",
-      "path": "system.diagnostics.performancecounter/6.0.0",
+      "path": "system.diagnostics.performancecounter/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21402,7 +21264,7 @@
         "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.xml",
         "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll",
         "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.xml",
-        "system.diagnostics.performancecounter.6.0.0.nupkg.sha512",
+        "system.diagnostics.performancecounter.6.0.1.nupkg.sha512",
         "system.diagnostics.performancecounter.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -21554,10 +21416,10 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.DirectoryServices/6.0.0": {
-      "sha512": "kp/Op0nxDVGlElDKh8TsXO0GKXftQgAB6sJk0wUetZK1Rr0Pbd86Tn7AllLLlROFZa4BTl/LVHakljtGELFzCg==",
+    "System.DirectoryServices/6.0.1": {
+      "sha512": "935IbO7h5FDGYxeO3cbx/CuvBBuk/VI8sENlfmXlh1pupNOB3LAGzdYdPY8CawGJFP7KNrHK5eUlsFoz3F6cuA==",
       "type": "package",
-      "path": "system.directoryservices/6.0.0",
+      "path": "system.directoryservices/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21577,7 +21439,7 @@
         "runtimes/win/lib/net6.0/System.DirectoryServices.xml",
         "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.dll",
         "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.xml",
-        "system.directoryservices.6.0.0.nupkg.sha512",
+        "system.directoryservices.6.0.1.nupkg.sha512",
         "system.directoryservices.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -21610,10 +21472,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.DirectoryServices.Protocols/6.0.0": {
-      "sha512": "++WKU7HQPo/FJdhywWw+q2lLjcVAGVw5XLH9kRCV+4DvkhVAcHCksh0ezIqwNROmaU9LMJN0d/LAdeWXu3pi6Q==",
+    "System.DirectoryServices.Protocols/6.0.1": {
+      "sha512": "ndUZlEkAMc1XzM0xGN++SsJrNhRkIHaKI8+te325vrUgoLT1ufWNI6KB8FFrL7NpRMHPrdxP99aF3fHbAPxW0A==",
       "type": "package",
-      "path": "system.directoryservices.protocols/6.0.0",
+      "path": "system.directoryservices.protocols/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21641,7 +21503,7 @@
         "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.xml",
         "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.Protocols.dll",
         "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.Protocols.xml",
-        "system.directoryservices.protocols.6.0.0.nupkg.sha512",
+        "system.directoryservices.protocols.6.0.1.nupkg.sha512",
         "system.directoryservices.protocols.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -21683,77 +21545,6 @@
         "system.drawing.common.6.0.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Dynamic.Runtime/4.3.0": {
-      "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
-      "type": "package",
-      "path": "system.dynamic.runtime/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Dynamic.Runtime.dll",
-        "lib/netstandard1.3/System.Dynamic.Runtime.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Dynamic.Runtime.dll",
-        "ref/netcore50/System.Dynamic.Runtime.xml",
-        "ref/netcore50/de/System.Dynamic.Runtime.xml",
-        "ref/netcore50/es/System.Dynamic.Runtime.xml",
-        "ref/netcore50/fr/System.Dynamic.Runtime.xml",
-        "ref/netcore50/it/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ja/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ko/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ru/System.Dynamic.Runtime.xml",
-        "ref/netcore50/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netcore50/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/System.Dynamic.Runtime.dll",
-        "ref/netstandard1.0/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/de/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/es/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/fr/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/it/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ja/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ko/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ru/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/System.Dynamic.Runtime.dll",
-        "ref/netstandard1.3/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/de/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/es/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/fr/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/it/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ja/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ko/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ru/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Dynamic.Runtime.dll",
-        "system.dynamic.runtime.4.3.0.nupkg.sha512",
-        "system.dynamic.runtime.nuspec"
       ]
     },
     "System.Formats.Asn1/6.0.0": {
@@ -22434,19 +22225,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Management.Automation/7.2.1": {
-      "sha512": "YlTE+q14vQ1YU//A5+/Jwl5+L5r6uOVIWuB4D/T9r80AaCeUAZMMvTKjgvIr9lwkovwQflVL+1JfBAi9f0q0KA==",
+    "System.Management.Automation/7.2.10": {
+      "sha512": "cSN18dJ8amehBAW+jv1/AZBmfCJIpUML94S86DssmrsrodCFgrvWXS4XJ5/nxUC07XSG+OzKKhdDeDTIgK+dTQ==",
       "type": "package",
-      "path": "system.management.automation/7.2.1",
+      "path": "system.management.automation/7.2.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Powershell_black_64.png",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
         "ref/net6.0/System.Management.Automation.dll",
         "ref/net6.0/System.Management.Automation.xml",
         "runtimes/unix/lib/net6.0/System.Management.Automation.dll",
         "runtimes/win/lib/net6.0/System.Management.Automation.dll",
-        "system.management.automation.7.2.1.nupkg.sha512",
+        "system.management.automation.7.2.10.nupkg.sha512",
         "system.management.automation.nuspec"
       ]
     },
@@ -22555,10 +22348,10 @@
         "system.net.http.nuspec"
       ]
     },
-    "System.Net.Http.WinHttpHandler/6.0.0": {
-      "sha512": "jubNN9jH4NzVrvEf4fGwESLBsfH8whWNbHMhgM6IwA8UCt6+/M19bbOHc21JhigvC2HQKCl8HKGZMcBtIpzqIg==",
+    "System.Net.Http.WinHttpHandler/6.0.1": {
+      "sha512": "zdSpn2+EPBEXmsopvUjkpvbXNN53dqL7BifCKBJ5M+A/P3JEiCL/guuPwuiazu+RzCuEX/NJLnoXhllaf3vBxg==",
       "type": "package",
-      "path": "system.net.http.winhttphandler/6.0.0",
+      "path": "system.net.http.winhttphandler/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -22583,7 +22376,7 @@
         "runtimes/win/lib/netstandard2.0/System.Net.Http.WinHttpHandler.xml",
         "runtimes/win/lib/netstandard2.1/System.Net.Http.WinHttpHandler.dll",
         "runtimes/win/lib/netstandard2.1/System.Net.Http.WinHttpHandler.xml",
-        "system.net.http.winhttphandler.6.0.0.nupkg.sha512",
+        "system.net.http.winhttphandler.6.0.1.nupkg.sha512",
         "system.net.http.winhttphandler.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -24088,10 +23881,10 @@
         "system.security.cryptography.openssl.nuspec"
       ]
     },
-    "System.Security.Cryptography.Pkcs/6.0.0": {
-      "sha512": "elM3x+xSRhzQysiqo85SbidJJ2YbZlnvmh+53TuSZHsD7dNuuEWser+9EFtY+rYupBwkq2avc6ZCO3/6qACgmg==",
+    "System.Security.Cryptography.Pkcs/6.0.2": {
+      "sha512": "1YcPZrdfjbHtzA2Y9EeAZ1zt7EWPBs30lgpG9PXgwP7onF91+sX1qijegcnuo4cULCcT8GiaaJFsDcEqdc9PVg==",
       "type": "package",
-      "path": "system.security.cryptography.pkcs/6.0.0",
+      "path": "system.security.cryptography.pkcs/6.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24120,7 +23913,7 @@
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
         "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
         "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
-        "system.security.cryptography.pkcs.6.0.0.nupkg.sha512",
+        "system.security.cryptography.pkcs.6.0.2.nupkg.sha512",
         "system.security.cryptography.pkcs.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -24245,10 +24038,10 @@
         "system.security.cryptography.x509certificates.nuspec"
       ]
     },
-    "System.Security.Cryptography.Xml/6.0.0": {
-      "sha512": "puJ4UCh9JVRwOCyCIcq71JY6Axr8Sp8E2GjTIU1Fj8hm4+oX6NEoyGFGa/+pBG8SrVxbQPSj7hvtaREyTHHsmw==",
+    "System.Security.Cryptography.Xml/6.0.1": {
+      "sha512": "5e5bI28T0x73AwTsbuFP4qSRzthmU2C0Gqgg3AZ3KTxmSyA+Uhk31puA3srdaeWaacVnHhLdJywCzqOiEpbO/w==",
       "type": "package",
-      "path": "system.security.cryptography.xml/6.0.0",
+      "path": "system.security.cryptography.xml/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24265,7 +24058,7 @@
         "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
         "runtimes/win/lib/net461/System.Security.Cryptography.Xml.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.Xml.xml",
-        "system.security.cryptography.xml.6.0.0.nupkg.sha512",
+        "system.security.cryptography.xml.6.0.1.nupkg.sha512",
         "system.security.cryptography.xml.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -25570,26 +25363,31 @@
       "CommunityToolkit.WinUI.UI.Controls.DataGrid >= 7.1.2",
       "Markdown >= 2.2.1",
       "Microsoft.Extensions.Hosting >= 7.0.1",
-      "Microsoft.WindowsAppSDK >= 1.3.230602002",
+      "Microsoft.WindowsAppSDK >= 1.4.230822000",
       "Microsoft.Xaml.Behaviors.WinUI.Managed >= 2.0.9",
       "Silicon Library.Core >= 1.0.0",
       "WinUIEx >= 2.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sandeep V\\.nuget\\packages\\": {}
+    "C:\\Users\\Sandeep V\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+      "projectUniqueName": "C:\\Users\\Sandeep V\\Development\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
       "projectName": "Silicon Library",
-      "projectPath": "D:\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
+      "projectPath": "C:\\Users\\Sandeep V\\Development\\Silicon-Library\\Silicon Library\\Silicon Library.csproj",
       "packagesPath": "C:\\Users\\Sandeep V\\.nuget\\packages\\",
-      "outputPath": "D:\\Silicon-Library\\Silicon Library\\obj\\",
+      "outputPath": "C:\\Users\\Sandeep V\\Development\\Silicon-Library\\Silicon Library\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Sandeep V\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -25597,14 +25395,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "projectReferences": {
-            "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
-              "projectPath": "D:\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj"
+            "C:\\Users\\Sandeep V\\Development\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj": {
+              "projectPath": "C:\\Users\\Sandeep V\\Development\\Silicon-Library\\Silicon Library.Core\\Silicon Library.Core.csproj"
             }
           }
         }
@@ -25645,7 +25444,7 @@
           },
           "Microsoft.WindowsAppSDK": {
             "target": "Package",
-            "version": "[1.3.230602002, )"
+            "version": "[1.4.230822000, )"
           },
           "Microsoft.Xaml.Behaviors.WinUI.Managed": {
             "target": "Package",
@@ -25667,6 +25466,48 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-arm64",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x86",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.Windows.SDK.NET.Ref",
+            "version": "[10.0.19041.29, 10.0.19041.29]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[6.0.21, 6.0.21]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+            "version": "[6.0.21, 6.0.21]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -25675,7 +25516,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
