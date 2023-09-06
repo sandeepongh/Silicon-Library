@@ -51,10 +51,10 @@
                 </RelativePanel>
                 <Grid ColumnDefinitions="336, *" RowDefinitions ="*, Auto, *"  ColumnSpacing="9">
 
-                    <StackPanel VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"  x:Name="grp1" BorderThickness="1" BorderBrush="#2888" Background="#2888" CornerRadius="4">
+                    <StackPanel VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"  x:Name="grp1" BorderThickness="1" BorderBrush="#2888" Background="#2888" Padding="20" CornerRadius="4">
                         <Grid VerticalAlignment="Center" ColumnDefinitions="100, *" RowDefinitions ="*, Auto, *">
-                            <StackPanel Grid.Column="0" Grid.Row="0"  x:Name="grpc1" HorizontalAlignment="Left" Padding="10">
-                                <Image Source="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceIcon}" Height="80" HorizontalAlignment="Left" />
+                            <StackPanel Grid.Column="0" Grid.Row="0"  x:Name="grpc1" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                <Image Source="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceIcon}" Height="80" VerticalAlignment="Center" HorizontalAlignment="Left" />
                             </StackPanel>
                             <StackPanel Grid.Column="1" Grid.Row="0"  x:Name="grpc2" HorizontalAlignment="Left">
                                 <TextBlock Text="{x:Bind ViewModel.Item.DeviceDetailsModel.DeviceName}" 
@@ -67,23 +67,25 @@
                                         VerticalAlignment="Bottom" Margin="10" Style="{StaticResource AccentButtonStyle}" CornerRadius="16"
                                         Click="btnInvoke_Click">
                                     <StackPanel Orientation="Horizontal">
-                                        <SymbolIcon Symbol="Play" Margin="0,0,5,0"/>
-                                        <TextBlock Text="Run Test" />
+                                        <SymbolIcon Symbol="Play" Margin="0,0,8,0"/>
+                                        <TextBlock Text="Run the Test" />
                                     </StackPanel>
-                                   
+
                                 </Button>
                                 <TextBox x:Name="txtCliPath" Text="{x:Bind ViewModel.Item.DeviceDetailsModel.CLIPath}" Visibility="Collapsed" ></TextBox>
                             </StackPanel>
                         </Grid>
                     </StackPanel>
-                    <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" x:Name="grp2" Background="Black"  CornerRadius="4" Margin="16,0,16,16">
-                        <TextBlock Text="Terminal Output:" FontSize="25" Foreground="PaleGreen" Margin="20"/>
-                        <ItemsRepeaterScrollHost Height="550">
+                    <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" x:Name="grp2" Background="#002405" BorderBrush="#773F5940" BorderThickness="1"  CornerRadius="4" Margin="16">
+                        <TextBlock Text="Look out for errors here." Foreground="#D5FFD9" Margin="20" FontWeight="Medium"/>
+                        <TextBlock Text="Test Output:" FontWeight="Medium" FontSize="25" Foreground="#D5FFD9" Margin="20,-10,20,20"/>
+                        <Rectangle Height="1" Width="Auto" Fill="#773F5940" />
+                            <ItemsRepeaterScrollHost Margin="10" Height="550">
                             <ScrollViewer x:Name="process_Scroll" >
                                 <ItemsRepeater x:Name="processRepeater" ItemsSource="{x:Bind ViewModel.ProgressesCollection}">
                                     <ItemsRepeater.ItemTemplate>
                                         <DataTemplate x:DataType="local:ProgressItem">
-                                            <TextBlock Text="{x:Bind CurrentItemName}" Padding="20,0,20,0" Foreground="PaleGreen"/>
+                                            <TextBlock Text="{x:Bind CurrentItemName}" Padding="20,0,20,0" Foreground="#D5FFD9"/>
                                         </DataTemplate>
                                     </ItemsRepeater.ItemTemplate>
                                 </ItemsRepeater>
@@ -100,7 +102,7 @@
                             <TextBox x:Name="txtDeviceId" PlaceholderText="Device ID *" Width="Auto" Margin="10"/>
                         <DatePicker x:Name="dateReg"   Header="Device Registered On:"  Width="Auto" Margin="10"/>
                         <DatePicker x:Name="dateDue"  Header="Device Returned On:"  Width="Auto" Margin="10" />
-                            <CheckBox x:Name="chkDeviceCondition" Content="Is Device Damaged?" Width="Auto" Margin="10"/>
+                            <CheckBox HorizontalAlignment="Center" x:Name="chkDeviceCondition" Content="Is Device Damaged?" Width="Auto" Margin="10"/>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 
                                 <Button x:Name="btnSubmit" HorizontalAlignment="Left" Margin="10" Click="btnSubmit_Click">
@@ -112,7 +114,7 @@
                                 <Button x:Name="btnClear" HorizontalAlignment="Right" Margin="10" Click="btnClear_Click" >
                                     <StackPanel Orientation="Horizontal">
                                         <SymbolIcon HorizontalAlignment="Stretch" Symbol="Cancel" Margin="0,0,5,0"/>
-                                        <TextBlock Text="Clear" />
+                                        <TextBlock Text="Cancel" />
                                     </StackPanel>
                                 </Button>
                             </StackPanel>

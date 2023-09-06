@@ -15,12 +15,15 @@ public class PageService : IPageService
     public PageService()
     {
         Configure<WelcomeViewModel, WelcomePage>();
+        Configure<WelcomeTwoViewModel, WelcomeTwoPage>();
         Configure<DevicesViewModel, DevicesPage>();
         Configure<DevicesDetailViewModel, DevicesDetailPage>();
         Configure<DatabaseViewModel, DatabasePage>();
         Configure<SettingsViewModel, SettingsPage>();
         Configure<HelpViewModel, HelpPage>();
         Configure<AddDeviceViewModel, AddDevicePage>();
+        Configure<IntroViewModel, IntroPage>();
+        Configure<WelcomeThreeViewModel, WelcomeThreePage>();
     }
 
     public Type GetPageType(string key)

@@ -19,18 +19,19 @@
                 
                 <Expander HorizontalAlignment="Stretch" Header="Add a New Device" x:Name="DeviceAddArea">
                     <StackPanel>
-                        <TextBox x:Name="txtUserId" PlaceholderText="Enter a Device Name *" MinWidth="300" Margin="10"/>
+                        <TextBlock />
+                            <TextBox x:Name="txtUserId" PlaceholderText="Enter a Name *" MinWidth="300" Margin="10"/>
                         <StackPanel Orientation="Horizontal">
                             <Button>
                                 <FontIcon Glyph="&#xEC50;" />
                             </Button>
-                            <TextBox x:Name="txtUserName" PlaceholderText="Locate the Test Script *" Width="Auto" Margin="10"/>
+                            <TextBox x:Name="txtUserName" PlaceholderText="Find the Test Program *" Width="Auto" MinWidth="300" Margin="10"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <Button>
                                 <FontIcon Glyph="&#xEC50;" />
                             </Button>
-                            <TextBox x:Name="txtDeviceId" PlaceholderText="Give your Device an Icon *" Width="Auto" Margin="10"/>
+                            <TextBox x:Name="txtDeviceId" PlaceholderText="Give your Device an Icon *" Width="Auto" MinWidth="300" Margin="10"/>
                         </StackPanel>
                         <Button x:Name="btnAddDevices" 
                                         VerticalAlignment="Bottom" Margin="10"

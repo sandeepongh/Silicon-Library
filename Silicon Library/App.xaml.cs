@@ -68,6 +68,12 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
+            services.AddTransient<WelcomeThreeViewModel>();
+            services.AddTransient<WelcomeThreePage>();
+            services.AddTransient<IntroViewModel>();
+            services.AddTransient<IntroPage>();
+            services.AddTransient<WelcomeTwoViewModel>();
+            services.AddTransient<WelcomeTwoPage>();
             services.AddTransient<WelcomeViewModel>();
             services.AddTransient<WelcomePage>();
             services.AddTransient<AddDeviceViewModel>();

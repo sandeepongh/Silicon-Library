@@ -6,9 +6,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="ContentArea">
-        
-        
-
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition IsStaggeringEnabled="True" />
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" MinWidth="400" Height="Auto" MinHeight="400" Margin="8" Padding="20" CornerRadius="8"  Background="#2777" >
+            <TextBlock MaxWidth="400" Padding="8"  FontSize="28" FontWeight="SemiBold"  TextAlignment="Center" TextWrapping="WrapWholeWords" Text="Let's get you up and running!" />
+            <StackPanel Margin="4" Padding="4" CornerRadius="4" HorizontalAlignment="Center">
+                <TextBlock MaxWidth="400" Padding="12" TextAlignment="Center" TextWrapping="WrapWholeWords" Text="We need you to enable this option in Developer Settings before we can begin." />
+                <StackPanel Padding="4" Margin="4" BorderBrush="#4777" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="4">
+                    <StackPanel Padding="-4" CornerRadius="4" BorderBrush="#4000" BorderThickness="1.2">
+                        <Image Stretch="Fill" Source="ms-appx:Assets\Screenshots\powershell.png" Width="350" Height="Auto"/>
+                    </StackPanel>
+                    <Button x:Name="powershellButton" Content="Click here to enable PowerShell execution" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Click="powershellButton_Click">
+                        <Button.Transitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition />
+                            </TransitionCollection>
+                        </Button.Transitions>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            <Button x:Name="welcomeTwoButton" Click="welcomeTwoButton_Click" Background="{ThemeResource AccentTextFillColorPrimaryBrush}" Foreground="{ThemeResource SystemAltHighColor}" Margin="12" Padding="16,8,16,8" Content="I've enabled the option!" CornerRadius="18" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        </StackPanel>
     </Grid>
 </Page>

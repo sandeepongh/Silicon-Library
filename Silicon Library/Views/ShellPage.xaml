@@ -58,11 +58,26 @@
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe897;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <!--<NavigationViewItem x:Uid="Shell_Welcome" helpers:NavigationHelper.NavigateTo="Silicon_Library.ViewModels.WelcomeViewModel">
+                <NavigationViewItem Visibility="Collapsed" x:Uid="Shell_Intro" helpers:NavigationHelper.NavigateTo="Silicon_Library.ViewModels.IntroViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe7c3;"/>
+                        <FontIcon />
                     </NavigationViewItem.Icon>
-                </NavigationViewItem>-->
+                </NavigationViewItem>
+                <NavigationViewItem Visibility="Collapsed" x:Uid="Shell_Welcome" helpers:NavigationHelper.NavigateTo="Silicon_Library.ViewModels.WelcomeViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Visibility="Collapsed" x:Uid="Shell_WelcomeTwo" helpers:NavigationHelper.NavigateTo="Silicon_Library.ViewModels.WelcomeTwoViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Visibility="Collapsed" x:Uid="Shell_WelcomeThree" helpers:NavigationHelper.NavigateTo="Silicon_Library.ViewModels.WelcomeThreeViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
             <NavigationView.HeaderTemplate>
                 <DataTemplate>

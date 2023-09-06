@@ -162,7 +162,16 @@
   <data name="Shell_AddDevice.Content" xml:space="preserve">
     <value>AddDevice</value>
   </data>
+  <data name="Shell_Intro.Content" xml:space="preserve">
+    <value>Hello There!</value>
+  </data>
   <data name="Shell_Welcome.Content" xml:space="preserve">
-    <value>Welcome</value>
+    <value>Hello There!</value>
+  </data>
+  <data name="Shell_WelcomeTwo.Content" xml:space="preserve">
+    <value>Hello There!</value>
+  </data>
+  <data name="Shell_WelcomeThree.Content" xml:space="preserve">
+    <value>Hello There!</value>
   </data>
 </root>
